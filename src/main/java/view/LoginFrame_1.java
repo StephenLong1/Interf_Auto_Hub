@@ -72,8 +72,6 @@ public class LoginFrame_1 extends JFrame {
 		setBounds(100, 100, 998, 636);
 		setLocationRelativeTo(null);
 		setResizable(false);
-
-
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
