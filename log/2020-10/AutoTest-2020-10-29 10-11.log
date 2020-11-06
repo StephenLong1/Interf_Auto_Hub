@@ -1,0 +1,4 @@
+10:11:35  [INFO ] : 该接口请求体： {"RefundSn":"1029100958037d","DealCode":"1029100704388","ShopCode":"swatch","Status":"THRK","Oid":"20201029100658","RefundFee":"200.00","Operator":"stephen","RefundTime":"2020-10-29 10:09:58"}
+10:11:35  [INFO ] : 发送URL请求  →  http://39.98.231.61:30003/api/fromduijie?method=refund.confirm&timestamp=1603937495733&format=json&app_key=21534044&v=2.0&sign_method=md5&sales_brand=swatch&sign=6A37C79A70DECF684D514E06D4D57DE8
+10:11:36  [INFO ] : 接口：【退款确认】 的返回体是：{"flag":"success","code":"","message":"操作成功","msg":"操作成功"}
+10:11:36  [INFO ] : 退款确认 → 断言验证成功, 结果与预期结果匹配

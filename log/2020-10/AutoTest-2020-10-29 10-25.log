@@ -1,0 +1,8 @@
+10:25:34  [INFO ] : 该接口请求体： {"RefundSn":"1029100958037d","DealCode":"1029100704388","ShopCode":"swatch","Status":"THRK","Oid":"20201029100658","RefundFee":"200.00","Operator":"stephen","RefundTime":"2020-10-29 10:24:59"}
+10:25:34  [INFO ] : 发送URL请求  →  http://39.98.231.61:30003/api/fromduijie?method=refund.confirm&timestamp=1603938334646&format=json&app_key=21534044&v=2.0&sign_method=md5&sales_brand=swatch&sign=208E2CCC71948322D8393FEAEDCC64AD
+10:25:35  [INFO ] : 接口：【退款确认】 的返回体是：{"flag":"failure","code":"ERROR-refundStatus","message":"退款单已完结","msg":"退款单已完结"}
+10:25:35  [INFO ] : 退款确认 → 断言验证失败, 请查看返回体,检查你所测试的品牌商是否支持该接口,
+10:25:49  [INFO ] : 该接口请求体： {"RefundSn":"1029100958037d","DealCode":"1029100704388","ShopCode":"swatch","Status":"THRK","Oid":"20201029100658","RefundFee":"200.00","Operator":"stephen","RefundTime":"2020-10-29 10:25:42"}
+10:25:49  [INFO ] : 发送URL请求  →  http://39.98.231.61:30003/api/fromduijie?method=refund.confirm&timestamp=1603938349884&format=json&app_key=21534044&v=2.0&sign_method=md5&sales_brand=swatch&sign=DCF2B477335BFE9DC949E355A7667117
+10:25:51  [INFO ] : 接口：【退款确认】 的返回体是：{"flag":"failure","code":"ERROR-refundStatus","message":"退款单已完结","msg":"退款单已完结"}
+10:25:51  [INFO ] : 退款确认 → 断言验证失败, 请查看返回体,检查你所测试的品牌商是否支持该接口,

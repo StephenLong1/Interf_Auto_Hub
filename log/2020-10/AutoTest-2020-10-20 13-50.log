@@ -1,0 +1,14 @@
+13:50:14  [INFO ] : ----------------------------------------------执-行--OMS-【一键转单】-定-时-任-务---------------------------------------------------
+13:50:15  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+13:50:16  [INFO ] : 接口 -->> 【进入代转订单页面】 的返回体是html格式 ->> 状态码：200
+13:50:16  [INFO ] : Date: Tue, 20 Oct 2020 05:50:15 GMT
+13:50:16  [INFO ] : Server: Apache
+13:50:16  [INFO ] : X-Frame-Options: SAMEORIGIN
+13:50:16  [INFO ] : X-Powered-By: PHP/7.1.7
+13:50:16  [INFO ] : Cache-Control: no-cache, private
+13:50:16  [INFO ] : Set-Cookie: XSRF-TOKEN=eyJpdiI6IjdJMnhsTitjRWJZYU5lN3MxWmVYXC9BPT0iLCJ2YWx1ZSI6IkxzS1dHa3hlbkpxVTh4clJmdktMQXJXbG1MU1F5eTU1dDJ6OWZ5VkxjMjM4K0lIS3RiWTdpNVVNTitvdXNxZ1pzNkd0aGtYa1wvZTIxalQ2c2x3TGs0UT09IiwibWFjIjoiZjE5MzdjNjQ2ZmE4ZjA1YmVjODYwMTViN2JiOTAwYTExNjM0OTQzYWJhOGUyYWFiMzllY2RiY2FmZjBlNDUyNyJ9; expires=Tue, 20-Oct-2020 17:50:16 GMT; Max-Age=43200; path=/
+13:50:16  [INFO ] : Set-Cookie: mcs_session=eyJpdiI6InVHWGNnZ2l6dTF1UEl4WGFFa09CVGc9PSIsInZhbHVlIjoia3c0NjhsWmFjYklQcUJVMklBKzFIdlQ3dWVIN2d4eVY5eExCbmRmMGRMeEZsT2NlQmlCK254STdQRkhJQ0cyUHdqSFZRQm9YZTh1eWpwbEgzRlI4ZGc9PSIsIm1hYyI6ImY4M2VkYjY1MmYyYjgzMjg0MjJhNmNiOWZhOGNiNjgwOTg3ZDY1NjRlYTc2YjBmMDIzMTJkZWQ4MjM3OWE5OGUifQ%3D%3D; expires=Tue, 20-Oct-2020 17:50:16 GMT; Max-Age=43200; path=/; httponly
+13:50:16  [INFO ] : Vary: Accept-Encoding
+13:50:16  [INFO ] : Keep-Alive: timeout=15, max=300
+13:50:16  [INFO ] : Connection: Keep-Alive
+13:50:16  [INFO ] : Content-Type: text/html; charset=UTF-8

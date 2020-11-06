@@ -1,0 +1,50 @@
+16:57:01  [INFO ] : ownerCode：swatch
+16:57:01  [INFO ] : return_sn：1025155828780d
+16:57:01  [INFO ] : cancelReason：七天无理由
+16:57:06  [INFO ] : deal_code：1025155759291
+16:57:06  [INFO ] : refund_fee1：200.00
+16:57:06  [INFO ] : oid：20201025165701
+16:57:15  [INFO ] : shopName：swatch斯沃琪官方旗舰店
+16:57:15  [INFO ] : shopCode：swatch
+16:57:15  [INFO ] : ownerCode：swatch
+16:57:15  [INFO ] : 商品单价1：200
+16:57:15  [INFO ] : 商品单价2：800
+16:57:15  [INFO ] : 商品SKU1：7610522823730
+16:57:15  [INFO ] : 商品SKU2：7610522828841
+16:57:15  [INFO ] : 商品1数量：1
+16:57:15  [INFO ] : 商品2数量：1
+16:57:15  [INFO ] : 商品折扣1：0.00
+16:57:15  [INFO ] : 商品折扣1：0.00
+16:57:20  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+16:57:20  [INFO ] : 天猫订单创建成功：1个订单 生成的平台订单号为：1025165719611
+16:57:20  [INFO ] : 关闭数据库成功
+16:57:21  [INFO ] : SSH连接<- fuoms_swatch ->数据库成功
+16:57:21  [INFO ] : ----------------------------------------------执-行--OMS-【一键转单】-定-时-任-务---------------------------------------------------
+16:57:22  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+16:57:23  [INFO ] : 接口 -->> 【进入代转订单页面】 的返回体是html格式 ->> 状态码：200
+16:57:24  [INFO ] : 接口 -->> 【点击一键转单】 的返回体是：swatch斯沃琪官方旗舰店转单结束，正常：1单，退款：0单，问题：0单，crm赠品：0单
+16:57:24  [INFO ] : 接口 -->> 【OMS系统一键转单成功】 tid:1025165719611
+16:57:24  [INFO ] : ----------------------------------------------执-行--OMS-【一键转审核】---------------------------------------------------------------------------
+16:57:25  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+16:57:25  [INFO ] : 接口 -->> 【进入订单详情页】 的返回体是html格式 ->> 状态码：200
+16:57:26  [INFO ] : 接口 -->> 【点击一键审核】 的返回体是：{"flag":"success","msg":"操作成功"}
+16:57:26  [INFO ] : 709 || 1 || kuBxre7NNpqJDBLoQHAvNA2OnOeTcIhMrV0uM2ut
+16:57:27  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+16:57:27  [INFO ] : 天猫平台订单号：1025165719611
+16:57:27  [INFO ] : 关闭数据库成功
+16:57:27  [INFO ] : ----------------------------------------------------------------------------------------------------------
+16:57:47  [INFO ] : deal_code：1025165719611
+16:57:47  [INFO ] : refund_fee1：200.00
+16:57:47  [INFO ] : oid：20201025165701
+16:57:49  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+16:57:49  [INFO ] : INSERT INTO `jdp_tb_refund`(`refund_id`, `seller_nick`, `buyer_nick`, `status`, `created`, `tid`, `oid`, `modified`, `jdp_hashcode`, `jdp_response`, `jdp_created`, `jdp_modified`) VALUES (1025165748726, 'swatch斯沃琪官方旗舰店', 'stephen', 'WAIT_SELLER_AGREE', '2020-10-25 16:57:48', 1025165719611, 1025165719611, '2020-10-25 16:57:48', '14185203', '{"refund_get_response":{"refund":{"refund_id":"1025165748726","status":"WAIT_SELLER_AGREE","seller_nick":"swatch斯沃琪官方旗舰店","buyer_nick":"stephen","tid":1025165719611,"oid":1025165719611,"created":"2020-10-25 16:57:48","modified":"2020-10-25 16:57:48","advance_status":0,"alipay_no":"2019031422001101000544245835","attribute":";enfunddetail:1;ee_trace_id:0b0fa8ec15529958004425408e6491;bizCode:tmall.general.refund;lastOrder:0;disputeRequest:1;newRefund:rp2;tod:259200000;leavesCat:50012010;opRole:buyer;7d:1;apply_init_refund_fee:490000;itemBuyAmount:1;apply_text_id:500768;b2c:1;userCredit:5;seller_batch:true;restartForXiaoer:0;rootCat:50006842;tos:1;ol_tf:490000;sku:8806195806760|颜色分类#3B干邑色MWZ9SPA72CO001;sgr:1;bgmtc:2019-03-14 10#3B20#3B25;payMode:alipay;workflowName:refund;shop_name:MCM官方旗舰店;ttid:h5;old_reason_id:15;abnormal_dispute_status:0;seller_audit:0;itemPrice:490000;isVirtual:0;EXmrf:490000;","cs_status":1,"desc":"不要了，再另外买其他款","good_status":"BUYER_NOT_RECEIVED","has_good_return":false,"num":1,"num_iid":585560583902,"operation_contraint":"null","order_status":"WAIT_SELLER_SEND_GOODS","payment":"0.00","price":"200.00","reason":"","refund_fee":"200.00","refund_phase":"onsale","refund_remind_timeout":{"exist_timeout":true,"remind_type":3,"timeout":"2020-10-25 16:57:48"},"refund_version":1552995800503,"sku":"7610522823730","title":"自动化测试商品1","total_fee":"200.00"}}}', '2020-10-25 16:57:48', '2020-10-25 16:57:48');
+16:57:49  [INFO ] : 天猫退款单创建成功：1个订单单个oid  生成的refund_deal_code：1025165748726
+16:57:49  [INFO ] : 关闭数据库成功
+16:57:50  [INFO ] : SSH连接<- fuoms_swatch ->数据库成功
+16:57:50  [INFO ] : ----------------------------------------------执-行--OMS-【拉取天猫仅退款单】-定-时-任-务-------------------------------------------------
+16:57:51  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+16:57:51  [INFO ] : 接口 -->> 【搜索定时任务之拉取【仅退款】单】 的返回体是html格式 ->> 状态码：200
+16:57:52  [INFO ] : 接口 -->> 【点击执行】 的返回体是：{"status":1,"msg":"操作成功"}
+16:57:52  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+16:57:52  [INFO ] : 在表中【order_refund】获取到的refund_sn: 1025165748726b
+16:57:52  [INFO ] : 关闭数据库成功

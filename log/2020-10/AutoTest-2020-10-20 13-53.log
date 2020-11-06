@@ -1,0 +1,25 @@
+13:53:09  [INFO ] : ----------------------------------------------执-行--OMS-【一键转单】-定-时-任-务---------------------------------------------------
+13:53:10  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+13:53:11  [INFO ] : 接口 -->> 【进入代转订单页面】 的返回体是html格式 ->> 状态码：200
+13:53:11  [INFO ] : Date: Tue, 20 Oct 2020 05:53:10 GMT
+13:53:11  [INFO ] : Server: Apache
+13:53:11  [INFO ] : X-Frame-Options: SAMEORIGIN
+13:53:11  [INFO ] : X-Powered-By: PHP/7.1.7
+13:53:11  [INFO ] : Cache-Control: no-cache, private
+13:53:11  [INFO ] : Set-Cookie: XSRF-TOKEN=eyJpdiI6ImNxN2p5WVpOU2hGbHU5ZXhwRngzY0E9PSIsInZhbHVlIjoiZU9qR1Ayek9aYXBEQVRYQ1VOa0dXUk53SWwxTUw1N0w0VFNMKzhDVytMdDFJQWhVbHlvZkpcL0EwTzlcL1RZYklER3lyQ3NIaXA1NjcxOFVYaStQN1dcL2c9PSIsIm1hYyI6IjcxMzJhZTk2ZGMxNmNhMGZiYWEyNjkzZjE1N2YzY2Y3NjM1NGZiZTQyYmIwNGY0NjYwNWRkZTg0OWMzNWIxZTAifQ%3D%3D; expires=Tue, 20-Oct-2020 17:53:10 GMT; Max-Age=43200; path=/
+13:53:11  [INFO ] : Set-Cookie: mcs_session=eyJpdiI6IjgxMEJGZFBodHFXQUdMWGxrY0Nvenc9PSIsInZhbHVlIjoiZDN1MWFLbDFnMll6S2lLUml1RzVkOFR1OGRtMTJ5Y1RYbWlYNTlCNWVKZDQrM2dhZXFLMk5sMUtYcitQR3Z3ZGhESUpSMGdpcGljQkZTOVlGS0RsK2c9PSIsIm1hYyI6IjE0ZWRhYTFlNDBhNWZjM2Q2MzM4Zjc3ZTEzNzU3YmRiYWVkMzU2Y2JmMjM4N2VlOGEyODA5YzRlMTExNDc4NWYifQ%3D%3D; expires=Tue, 20-Oct-2020 17:53:10 GMT; Max-Age=43200; path=/; httponly
+13:53:11  [INFO ] : Vary: Accept-Encoding
+13:53:11  [INFO ] : Keep-Alive: timeout=15, max=300
+13:53:11  [INFO ] : Connection: Keep-Alive
+13:53:11  [INFO ] : Content-Type: text/html; charset=UTF-8
+13:53:11  [INFO ] : 接口 -->> 【点击一键转单】 的返回体是html格式 ->> 状态码：500
+13:53:11  [INFO ] : Date: Tue, 20 Oct 2020 05:53:11 GMT
+13:53:11  [INFO ] : Server: Apache
+13:53:11  [INFO ] : X-Frame-Options: SAMEORIGIN
+13:53:11  [INFO ] : X-Powered-By: PHP/7.1.7
+13:53:11  [INFO ] : Cache-Control: no-cache, private
+13:53:11  [INFO ] : Set-Cookie: XSRF-TOKEN=eyJpdiI6IlUxcWpCRmhNOWNHQW5pMGtLdFdUUkE9PSIsInZhbHVlIjoid0tlaStBOTQ0YzFqUFFJS0lmUU5UUzRwRzBmV1VmbXNzbDlwem12cDE5dHhwVXkwV1ZoZnNUT04wbkJ0Nmkxc0grZnJrY1RBVDNTRU9CYTl4K2w3aGc9PSIsIm1hYyI6Ijc0Y2QyZDIyNDk2NWNjYTUzYjA4OTRkMTg3MWQwODA1MDg0NDRjMjgzMTA0N2QxYzI5OGE5Zjg1OGQxNjc3YzkifQ%3D%3D; expires=Tue, 20-Oct-2020 17:53:11 GMT; Max-Age=43200; path=/
+13:53:11  [INFO ] : Set-Cookie: mcs_session=eyJpdiI6InJmd3BwS0wzYXFQZWlFUXpRZWREMXc9PSIsInZhbHVlIjoicTRXblJ4ZXRmTUFSYytSYU5OV2F5UFJWSnVjaHk0OUZHWmt2OFROWlRDbnUrTnFvMDMxM1BISEFBSVVGMkJUYXEyMzFLZVluc2xqVVRndHNXODArUEE9PSIsIm1hYyI6IjRhMWNjOGI4OWNiZGFiYmU5ODYzOWM0NzlhMGZjNmIwMWQ5ZWI3YzFkNjY2MmQzMzFiMWZlZTdiMTQzYmMxMTcifQ%3D%3D; expires=Tue, 20-Oct-2020 17:53:11 GMT; Max-Age=43200; path=/; httponly
+13:53:11  [INFO ] : Vary: Accept-Encoding
+13:53:11  [INFO ] : Connection: close
+13:53:11  [INFO ] : Content-Type: text/html; charset=UTF-8

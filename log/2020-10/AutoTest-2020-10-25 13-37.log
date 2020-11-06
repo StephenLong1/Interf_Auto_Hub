@@ -1,0 +1,9 @@
+13:37:44  [INFO ] : deal_code：1025131350607
+13:37:44  [INFO ] : refund_fee1：200.00
+13:37:44  [INFO ] : oid：20201025133743
+13:37:55  [INFO ] : 订单号：1025131350607a
+13:37:56  [INFO ] : 该接口请求体： {"deliveryOrderCode":"1025131350607a","orderType":"JYCK","warehouseCode":"BQJX01","outBizCode":"1025131350607a-1195985","confirmType":"0","orderConfirmTime":"2020-10-25 13:37:43","deliveryOrderId":null,"updatedDate":"2020-10-25 13:37:43","logisticsName":"SF","logisticsNo":"SF1111111111113"}
+13:37:56  [INFO ] : 发送URL请求  →  http://39.98.231.61:30003/api/fromduijie?method=delivery.order&timestamp=1603604276759&format=json&app_key=21534044&v=2.0&sign_method=md5&sales_brand=swatch&sign=91682CFA51A0EB01E00C151DA18ACA85
+13:37:57  [INFO ] : 接口：【订单发货回传】 的返回体是：{"flag":"failure","code":"order.already.finish","message":"订单已完成发货"}
+13:37:57  [INFO ] : {"deliveryOrderCode":"1025131350607a","orderType":"JYCK","warehouseCode":"BQJX01","outBizCode":"1025131350607a-1195985","confirmType":"0","orderConfirmTime":"2020-10-25 13:37:43","deliveryOrderId":null,"updatedDate":"2020-10-25 13:37:43","logisticsName":"SF","logisticsNo":"SF1111111111113"}
+13:37:57  [INFO ] : 订单发货回传 → 断言验证失败, 请查看返回体,检查你所测试的品牌商是否支持该接口,

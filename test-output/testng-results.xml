@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="14915" started-at="2020-11-06T15:06:28 CST" finished-at="2020-11-06T15:06:43 CST">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="14915" started-at="2020-11-06T15:06:28 CST" finished-at="2020-11-06T15:06:43 CST">
+      <class name="controller.OrderCreate1">
+        <test-method status="PASS" signature="getTMOrder()[pri:0, instance:controller.OrderCreate1@27c7c089]" name="getTMOrder" duration-ms="14893" started-at="2020-11-06T15:06:28 CST" description="新建天猫单" finished-at="2020-11-06T15:06:43 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTMOrder -->
+      </class> <!-- controller.OrderCreate1 -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

@@ -1,0 +1,27 @@
+18:23:14  [INFO ] : ----------------------------------------------获--取--HUB--数--据--------------------------------------------------------
+18:23:15  [INFO ] : SSH连接<- bq_interface ->数据库成功
+18:23:15  [INFO ] : select * from mulberry_delivery_order where deliveryOrderCode='1020181356138a'limit 1,2;
+18:23:15  [INFO ] : select * from mulberry_delivery_order where deliveryOrderCode='1020181356138a'limit 0,1;
+18:23:15  [INFO ] : 【HUB<插入数据商品1>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"800.00","sourceOrderCode":"1020181356138","itemCode":"HH5059/205A100OS","orderFlag":"NORMAL","detailAddress":"上海市长宁区接口自动化","deliveryOrderCode":"1020181356138a","retailPrice":"9500.00","warehouseCode":"BQJX01"}
+18:23:15  [INFO ] : 【HUB<插入数据商品2>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"1000.00","sourceOrderCode":"1020181356138","itemCode":"HH4706/205Z698OS","orderFlag":"NORMAL","detailAddress":"上海市长宁区接口自动化","deliveryOrderCode":"1020181356138a","retailPrice":"11600.00","warehouseCode":"BQJX01"}
+18:23:15  [INFO ] : ----------------------------------------------获--取--OMS--数--据--------------------------------------------------------
+18:23:15  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"orderType":"JYCK","actualPrice2":"800.00","actualPrice1":"1000.00","barCode1":"HH4706/205Z698OS","warehouseCode":"BQJX01","barCode2":"HH5059/205A100OS","sourcePlatformCode":"TM","orderFlag":"NORMAL","fullAddress":"上海市长宁区接口自动化","sourceOrderCode1":"1020181356138","sourceOrderCode2":"1020181356138","planQty2":"1","planQty1":"1","order_sn":"1020181356138a"}
+18:23:15  [INFO ] : -------------------------------------校验成功 ->> hub-interface的表与oms数据校验一致, 测试通过------------------------------
+18:23:32  [INFO ] : ----------------------------------------------获--取--HUB--数--据--------------------------------------------------------
+18:23:33  [INFO ] : SSH连接<- bq_interface ->数据库成功
+18:23:33  [INFO ] : select * from mulberry_delivery_order where deliveryOrderCode='1020181356138a'limit 1,2;
+18:23:33  [INFO ] : select * from mulberry_delivery_order where deliveryOrderCode='1020181356138a'limit 0,1;
+18:23:33  [INFO ] : 【HUB<插入数据商品1>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"800.00","sourceOrderCode":"1020181356138","itemCode":"HH5059/205A100OS","orderFlag":"NORMAL","detailAddress":"上海市长宁区接口自动化","deliveryOrderCode":"1020181356138a","retailPrice":"9500.00","warehouseCode":"BQJX01"}
+18:23:33  [INFO ] : 【HUB<插入数据商品2>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"1000.00","sourceOrderCode":"1020181356138","itemCode":"HH4706/205Z698OS","orderFlag":"NORMAL","detailAddress":"上海市长宁区接口自动化","deliveryOrderCode":"1020181356138a","retailPrice":"11600.00","warehouseCode":"BQJX01"}
+18:23:33  [INFO ] : ----------------------------------------------获--取--OMS--数--据--------------------------------------------------------
+18:23:33  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"orderType":"JYCK","actualPrice2":"800.00","actualPrice1":"1000.00","barCode1":"HH4706/205Z698OS","warehouseCode":"BQJX01","barCode2":"HH5059/205A100OS","sourcePlatformCode":"TM","orderFlag":"NORMAL","fullAddress":"上海市长宁区接口自动化","sourceOrderCode1":"1020181356138","sourceOrderCode2":"1020181356138","planQty2":"1","planQty1":"1","order_sn":"1020181356138a"}
+18:23:33  [INFO ] : -------------------------------------校验成功 ->> hub-interface的表与oms数据校验一致, 测试通过------------------------------
+18:23:51  [INFO ] : ----------------------------------------------获--取--HUB--数--据--------------------------------------------------------
+18:23:52  [INFO ] : SSH连接<- bq_interface ->数据库成功
+18:23:52  [INFO ] : select * from mulberry_delivery_order where deliveryOrderCode='1020181356138a'limit 1,2;
+18:23:52  [INFO ] : select * from mulberry_delivery_order where deliveryOrderCode='1020181356138a'limit 0,1;
+18:23:52  [INFO ] : 【HUB<插入数据商品1>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"800.00","sourceOrderCode":"1020181356138","itemCode":"HH5059/205A100OS","orderFlag":"NORMAL","detailAddress":"上海市长宁区接口自动化","deliveryOrderCode":"1020181356138a","retailPrice":"9500.00","warehouseCode":"BQJX01"}
+18:23:52  [INFO ] : 【HUB<插入数据商品2>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"1000.00","sourceOrderCode":"1020181356138","itemCode":"HH4706/205Z698OS","orderFlag":"NORMAL","detailAddress":"上海市长宁区接口自动化","deliveryOrderCode":"1020181356138a","retailPrice":"11600.00","warehouseCode":"BQJX01"}
+18:23:52  [INFO ] : ----------------------------------------------获--取--OMS--数--据--------------------------------------------------------
+18:23:52  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"orderType":"JYCK","actualPrice2":"800.00","actualPrice1":"1000.00","barCode1":"HH4706/205Z698OS","warehouseCode":"BQJX01","barCode2":"HH5059/205A100OS","sourcePlatformCode":"TM","orderFlag":"NORMAL","fullAddress":"上海市长宁区接口自动化","sourceOrderCode1":"1020181356138","sourceOrderCode2":"1020181356138","planQty2":"1","planQty1":"1","order_sn":"1020181356138a"}
+18:23:52  [INFO ] : -------------------------------------校验失败 ->> hub-interface的表与oms数据校验不一致,测试失败-----------------------------

@@ -1,0 +1,60 @@
+16:20:26  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+16:20:26  [INFO ] : sys_info2_trade创建成功：1个订单 生成的平台订单号为：1028162025063
+16:20:26  [INFO ] : 关闭数据库成功
+16:20:27  [INFO ] : SSH连接<- fuoms_maje ->数据库成功
+16:20:27  [INFO ] : 天猫订单创建成功：1个订单 生成的平台订单号为：1028162025063
+16:20:27  [INFO ] : ----------------------------------------------执-行--OMS-【一键转单】-定-时-任-务---------------------------------------------------
+16:20:29  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+16:20:29  [INFO ] : 接口 -->> 【进入代转订单页面】 的返回体是html格式 ->> 状态码：200
+16:20:30  [INFO ] : 接口 -->> 【点击一键转单】 的返回体是：MAJE官方旗舰店转单结束，没有可转订单
+16:20:30  [INFO ] : ----------------------------------------------执-行--OMS-【一键转单】-定-时-任-务---------------------------------------------------
+16:20:32  [INFO ] : 接口 -->> 【登录OMS系统失败】<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="refresh" content="0;url='http://39.98.231.61:30003/admin'" />
+
+        <title>Redirecting to http://39.98.231.61:30003/admin</title>
+    </head>
+    <body>
+        Redirecting to <a href="http://39.98.231.61:30003/admin">http://39.98.231.61:30003/admin</a>.
+    </body>
+</html>
+16:20:33  [INFO ] : 接口 -->> 【进入代转订单页面】 的返回体是html格式 ->> 状态码：200
+16:20:34  [INFO ] : 接口 -->> 【点击一键转单】 的返回体是：maje官方旗舰店转单结束，正常：1单，退款：0单，问题：0单，crm赠品：0单
+16:20:34  [INFO ] : ----------------------------------------------执-行--OMS-【一键转审核】---------------------------------------------------------------------------
+16:20:35  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+16:20:36  [INFO ] : 接口 -->> 【进入订单详情页】 的返回体是：{"status":1,"msg":"数据不存在"}
+16:20:36  [INFO ] : 接口 -->> 【点击一键审核】 的返回体是：{"flag":"failure","msg":"操作失败"}
+16:20:36  [INFO ] : null || 1 || SfgqrcchkFHdSehinZPEOLv7YNq6v1BVIeTg9yoV
+16:20:57  [ERROR] : org.apache.http.conn.HttpHostConnectException: Connect to 39.98.231.61:30003 [/39.98.231.61] failed: Connection timed out: connect
+org.apache.http.conn.HttpHostConnectException: Connect to 39.98.231.61:30003 [/39.98.231.61] failed: Connection timed out: connect
+	at source.HttpClientKw.doPost(HttpClientKw.java:371) [classes/:?]
+	at source.HttpClientKw.clickButtonCheck(HttpClientKw.java:942) [classes/:?]
+	at source.SSHService.insertTmOrder(SSHService.java:643) [classes/:?]
+	at demo.demo.main(demo.java:21) [classes/:?]
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.8.0_241]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_241]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_241]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_241]
+	at java.net.Socket.connect(Socket.java:606) ~[?:1.8.0_241]
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.6.jar:4.5.6]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108) ~[httpclient-4.5.6.jar:4.5.6]
+	at source.HttpClientKw.doPost(HttpClientKw.java:347) ~[classes/:?]
+	... 3 more
+16:20:57  [INFO ] : 天猫平台订单号：1028162025063
+16:20:57  [INFO ] : 关闭数据库成功
+16:20:57  [INFO ] : ----------------------------------------------------------------------------------------------------------

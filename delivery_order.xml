@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Hub~Oms标准接口：通知发货和发货回传">
+
+	<test name="场景一：单订单-单/多商品-通知发货和发货回传">
+		<classes>
+			<class name="controller.DeliveryOrder1" />
+		</classes>
+	</test>
+
+</suite>

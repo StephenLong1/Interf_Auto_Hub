@@ -1,0 +1,13 @@
+15:08:08  [INFO ] : 该接口请求体： {"deliveryOrder":{"deliveryOrderCode":"1020150656270a","preDeliveryOrderCode":"","preDeliveryOrderId":"","orderType":"JYCK","warehouseCode":"BQJX01","orderFlag":"NORMAL","sourcePlatformCode":"TM","createTime":"2020-10-20 15:06:56","placeOrderTime":"2020-10-20 15:06:56","payTime":"2020-10-20 15:06:56","payNo":"","operateTime":"2020-10-20 15:06:56","logisticsCode":"SF","logisticsName":"\u987a\u4e30\u901f\u8fd0","expressCode":"","invoiceFlag":"N","shopNick":"mulberry","buyerNick":"stephen","totalAmount":"1000.00","itemAmount":"1000.00","discountAmount":"0","gotAmount":"1000.00","sellerMessage":"","buyerMessage":"","remark":"","logisticsAreaCode":null,"receiverInfo":{"name":"stephen","tel":"13100000000","mobile":"13100000000","province":"\u4e0a\u6d77","city":"\u4e0a\u6d77\u5e02","area":"\u957f\u5b81\u533a","detailAddress":"\u4e0a\u6d77\u5e02\u957f\u5b81\u533a\u63a5\u53e3\u81ea\u52a8\u5316","town":null},"serviceCode":2},"extendProps":{"baoJia":0,"baoJia_amount":0,"isPresell":"","mappingCode":"","proCode":"","PresellOrder":0,"payStatus":1},"orderLines":{"orderLine":[{"orderLineNo":1,"sourceOrderCode":"1020150656270","subSourceOrderCode":"","itemCode":"HH4706/205Z698OS","ownerCode":"mulberry","inventoryType":"ZP","planQty":1,"actualPrice":"1000.00","retailPrice":"1000.00","discountAmount":0,"extendProps":{"barCode":"HH4706/205Z698OS"}}]}}
+15:08:09  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+15:08:10  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+15:08:11  [INFO ] : 接口 -->> 【进入详情页】 的返回体是html格式 ->> 状态码：200
+15:08:11  [INFO ] : http://39.98.231.61:30003/admin/order/notice_shipping/orders%5B%5D=1138&platform=0&sd_id=1
+15:08:11  [INFO ] : 接口 -->> 【点击发货】 的返回体是html格式 ->> 状态码：419
+15:08:11  [INFO ] : http://39.98.231.61:30003/admin/logout/_token=QeekQcF6v7Q6bNSZbkrJAzm7TjYxmtt1oXtjc9KJ
+15:08:12  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+15:08:12  [INFO ] : ----------------------------------------------获--取--HUB--数--据----------------------------------------------------------------
+15:08:12  [INFO ] : SSH连接<- bq_interface ->数据库成功
+15:08:12  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"1000.00","fullAddress":"上海市长宁区接口自动化","orderFlag":"NORMAL","discountAmount":"0","retailPrice":"1000.00","order_sn":"1020150656270a","deal_code(":"1020150656270","warehouseCode":"BQJX01","barCode":"HH4706/205Z698OS"}
+15:08:12  [INFO ] : 【HUB<插入数据>表中的数据为： →】{}
+15:08:12  [INFO ] : 关闭数据库成功

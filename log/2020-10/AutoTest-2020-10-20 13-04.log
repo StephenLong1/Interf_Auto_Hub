@@ -1,0 +1,10 @@
+13:04:06  [INFO ] : XSRF-TOKEN值：eyJpdiI6InNwbVc4RHV4eVhEbXB2N3hZUmtGVFE9PSIsInZhbHVlIjoiV1QwZjZoSzBvbFZQT01KbFQxNUpmOUQ2RERadU9KbjlRWnVMMlhQenRNSW5CMVBWSFlOZDBWWFhTWVhWK2Z6UVJTTWI1eTd5SzZWVVhUSjNrbXNSWVE9PSIsIm1hYyI6ImNmZGJmMDNiZDcyNDJiMGFhYmFhMTc2YWI3NDNhOTNiM2RjMzZkNmI1NDI3OTliNzNjYTdiYzAyY2RjMzBlZDgifQ%3D%3D
+13:04:06  [INFO ] : token值为：EmMHP6flpN5uySKPT1jhkbTaRfQTS2JXeMlIkn6i
+13:04:07  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+13:04:08  [INFO ] : 接口 -->> 【进入代转订单页面】 的返回体是html格式 ->> 状态码：200
+13:04:08  [INFO ] : 接口 -->> 【点击执行】 的返回体是html格式 ->> 状态码：419
+13:04:25  [INFO ] : XSRF-TOKEN值：eyJpdiI6IkdGUDJWWDBNQXYxMTFQSlVLY1RjMlE9PSIsInZhbHVlIjoiTkhnOWZWa2lNaFFHdktackJ5bm5USWRpZWs4KzdHbjE2ZlhkWWx2RFhFbG5JQU5ORzNDc3lmdVJibFlEdVA5NzNkbThoaldZWjA4dnBudWp3OGQ1aWc9PSIsIm1hYyI6ImU3ZTFmNDcyNGRjOGIyZjU0ZjEzNzMzNDJlNjk1MzY1Y2JkZDk3N2Q4YzFlZTQ5ZTlhYmI0NGM4MTVhNDU0MTgifQ%3D%3D
+13:04:25  [INFO ] : token值为：fmAgjE5CIp1OkVWTCPpUVTik32kDDFOIr4ZlJBxb
+13:04:26  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+13:04:26  [INFO ] : 接口 -->> 【进入代转订单页面】 的返回体是html格式 ->> 状态码：200
+13:04:27  [INFO ] : 接口 -->> 【点击执行】 的返回体是html格式 ->> 状态码：419

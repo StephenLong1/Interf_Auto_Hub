@@ -1,0 +1,32 @@
+17:02:07  [INFO ] : deal_code：1028170027118
+17:02:07  [INFO ] : refund_fee1：200.00
+17:02:07  [INFO ] : refund_fee2：300.00
+17:02:07  [INFO ] : oid1：1028170027118
+17:02:07  [INFO ] : oid2：20201013782935
+17:02:09  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+17:02:09  [INFO ] : INSERT INTO `jdp_tb_refund`(`refund_id`, `seller_nick`, `buyer_nick`, `status`, `created`, `tid`, `oid`, `modified`, `jdp_hashcode`, `jdp_response`, `jdp_created`, `jdp_modified`) VALUES (1028170208918, 'swatch斯沃琪官方旗舰店', 'stephen', 'WAIT_BUYER_RETURN_GOODS', '2020-10-28 17:02:08', 1028170027118, 1028170027118, '2020-10-28 17:02:08', '17644905', '{"refund_get_response":{"refund":{"refund_id":"1028170208918","status":"WAIT_BUYER_RETURN_GOODS","seller_nick":"swatch斯沃琪官方旗舰店","buyer_nick":"stephen","tid":1028170027118,"oid":1028170027118,"created":"2020-10-28 17:02:08","modified":"2020-10-28 17:02:08","advance_status":0,"alipay_no":"2019031422001101000544245835","attribute":";enfunddetail:1;ee_trace_id:0b0fa8ec15529958004425408e6491;bizCode:tmall.general.refund;lastOrder:0;disputeRequest:1;newRefund:rp2;tod:259200000;leavesCat:50012010;opRole:buyer;7d:1;apply_init_refund_fee:490000;itemBuyAmount:1;apply_text_id:500768;b2c:1;userCredit:5;seller_batch:true;restartForXiaoer:0;rootCat:50006842;tos:1;ol_tf:490000;sku:8806195806760|颜色分类#3B干邑色MWZ9SPA72CO001;sgr:1;bgmtc:2019-03-14 10#3B20#3B25;payMode:alipay;workflowName:refund;shop_name:MCM官方旗舰店;ttid:h5;old_reason_id:15;abnormal_dispute_status:0;seller_audit:0;itemPrice:490000;isVirtual:0;EXmrf:490000;","cs_status":1,"desc":"不要了，再另外买其他款","good_status":"BUYER_NOT_RECEIVED","has_good_return":true,"num":1,"num_iid":585560583902,"operation_contraint":"null","order_status":"WAIT_SELLER_SEND_GOODS","payment":"0.00","price":"200.00","reason":"七天无理由","refund_fee":"200.00","refund_phase":"onsale","refund_remind_timeout":{"exist_timeout":true,"remind_type":1,"timeout":"2020-10-28 17:02:08"},"refund_version":11111111,"sku":"7610522823730","title":"自动化测试商品1","total_fee":"200.00"}}}', '2020-10-28 17:02:08', '2020-10-28 17:02:08');
+17:02:09  [INFO ] : 天猫退款单创建成功：1个订单单个oid  生成的refund_deal_code：1028170208918
+17:02:09  [INFO ] : 关闭数据库成功
+17:02:10  [INFO ] : SSH连接<- fuoms_swatch ->数据库成功
+17:02:10  [INFO ] : ----------------------------------------------执-行--OMS-【拉取天猫退货退款单】-定-时-任-务-------------------------------------------------
+17:02:11  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+17:02:12  [INFO ] : 接口 -->> 【搜索定时任务之拉取-退货退款-单】 的返回体是html格式 ->> 状态码：200
+17:02:13  [INFO ] : 接口 -->> 【点击执行】 的返回体是：{"status":1,"msg":"操作成功"}
+17:02:14  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+17:02:14  [INFO ] : 在表中【order_refund】获取到的refund_sn: 1028170208918d
+17:02:14  [INFO ] : 在表中【order_return】获取到的return_id: 13298
+17:02:14  [INFO ] : 在表中【order_return】获取到的return_sn: 1028170208918d
+17:02:14  [INFO ] : 在order_return_goods查询到的第一行的Id：374
+17:02:14  [INFO ] : 关闭数据库成功
+17:02:17  [INFO ] : 该接口请求体： {"returnOrder":{"returnOrderCode":"1028170208918d","warehouseCode":"BQJX01","orderType":"THRK","preDeliveryOrderCode":"1028170027118a","logisticsCode":"SF","logisticsName":"SF","expressCode":"12345678","buyerNick":"stephen","senderInfo":{"name":"stephen","mobile":"13100000000","email":"","province":"\u4e0a\u6d77\u000d\u000a","city":"\u4e0a\u6d77\u000d\u000a","area":"\u4e0a\u6d77\u000d\u000a","detailAddress":"\u4e0a\u6d77\u5e02\u957f\u5b81\u533a\u63a5\u53e3\u81ea\u52a8\u5316"},"remark":"","returnReason":"七天无理由"},"orderLines":{"orderLine":[{"orderLineNo":374,"sourceOrderCode":"1028170027118","subSourceOrderCode":"1028170027118","ownerCode":"swatch","itemCode":"7610522823730","planQty":1,"snList":{"sn":[]},"inventoryType":"ZP","extendProps":{"preOrderId":"","preSubOrderId":"","barCode":"7610522823730","UnitPrice":"200.00"}}]},"extendProps":{"shopCode":"swatch","ReceiptAmount":"200.00","Zip":"000000"}}
+17:02:19  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+17:02:19  [INFO ] : 接口 -->> 【进入退换货界面】 的返回体是html格式 ->> 状态码：200
+17:02:20  [INFO ] : 接口 -->> 【进入详情页面】 的返回体是：{"code":"","msg":"","count":1,"data":[{"id":374,"suit_barcode":"","goods_barcode":"7610522823730","oid":"1028170027118","goods_sn":"GE721","goods_name":"BLUE AWAY","color_name":"BLUE AWAY","size_name":"BLUE AWAY","buy_goods_num":1,"goods_price":"200.00","return_goods_num":1,"refund_fee":"200.00","is_delete":0,"order_sn":"1028170027118a","money_paid":200,"serial_no":"","order_goods_id":772,"return_status":"退货在途","goods_sales_type":0,"serial_num":1,"serial_list":[]}]}
+17:02:21  [INFO ] : 接口 -->> 【点击推送仓库/退货单】 的返回体是：{"flag":"success","msg":"推送成功！"}
+17:02:22  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+17:02:22  [INFO ] : ----------------------------------------------获--取--HUB--数--据----------------------------------------------------------------
+17:02:22  [INFO ] : SSH连接<- bq_interface ->数据库成功
+17:02:22  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"orderType":"THRK","planQty":"1","ownerCode":"swatch","itemCode":"7610522823730","preDeliveryOrderCode":"1028170027118a","subSourceOrderCode":"1028170027118","warehouseCode":"BQJX01","barCode":"7610522823730","ReceiptAmount":"200.00","UnitPrice":"200.00","returnOrderCode":"1028170208918d","returnReason":"七天无理由","sourceOrderCode":"1028170027118","detailAddress":"上海市长宁区接口自动化"}
+17:02:22  [INFO ] : 【HUB<插入数据>表中的数据为： →】{"shopCode":"swatch","orderType":"THRK","planQty":"1","ownerCode":"swatch","itemCode":"7610522823730","preDeliveryOrderCode":"1028170027118a","subSourceOrderCode":"1028170027118","warehouseCode":"BQJX01","ReceiptAmount":"200.00","UnitPrice":"200.00","returnOrderCode":"1028170208918d","returnReason":"七天无理由","sourceOrderCode":"1028170027118","detailAddress":"上海市长宁区接口自动化"}
+17:02:22  [INFO ] : -------------------------------------校验成功 ->> hub-interface的表与oms数据校验一致, 测试通过-------------------------------------
+17:02:22  [INFO ] : 【interface表没有查询到相关数据, 无法进行数据校验, 如果控制台日志显示接口执行正常, 请仔细检查该接口是否是走hub或该品牌是否支持该接口】

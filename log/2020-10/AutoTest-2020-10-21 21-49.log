@@ -1,0 +1,5 @@
+21:49:00  [INFO ] : 发送URL请求  →  http://47.92.244.122:30004/index.php?method=orderCancel&timestamp=1603288140385&format=json&app_key=21534044&v=2.0&sign_method=md5&sales_brand=mulberry&sign=F24EEC374AAA594AFC6C64BF94AC67D6
+21:49:01  [INFO ] : 接口：【取消订单】 的返回体是：{"code":401,"data":"1021140722459","msg":"非法请求：INVALID_OWNER"}
+21:49:01  [INFO ] : 取消/作废订单 → 断言验证失败, 请查看返回体,检查你所测试的品牌商是否支持该接口,
+21:49:01  [INFO ] : ----------------------------------------------获--取--HUB--数--据----------------------------------------------------------------
+21:49:02  [INFO ] : SSH连接<- bq_interface ->数据库成功

@@ -1,0 +1,15 @@
+15:10:02  [INFO ] : {"returnOrder":{"returnOrderCode":"1028150850799d","returnOrderId":"","warehouseCode":"BQJX01","orderType":"THRK","orderConfirmTime":"2020-10-28 15:08:50","logisticsCode":"SF","expressCode":"12345678","returnReason":null,"remark":"","outBizCode":"1028150724570a-1195985","senderInfo":{"name":"stephen","mobile":"13100000000","province":"\u4e0a\u6d77\u000d\u000a","city":"\u4e0a\u6d77\u000d\u000a","area":"\u4e0a\u6d77\u000d\u000a","detailAddress":"\u4e0a\u6d77\u5e02\u957f\u5b81\u533a\u63a5\u53e3\u81ea\u52a8\u5316"}},"extendProps":{"ownerCode":"swatch"},"orderLines":{"orderLine":[{"orderLineNo":372,"sourceOrderCode":"1028150724570","subSourceOrderCode":"1028150724570","linOwnerCode":"swatch","itemCode":"7610522823730","inventoryType":"ZP","planQty":1,"actualQty":"1","snList":{"sn":null},"extendProps":{"subOrderId":"","status":"1","outerReturnId":"","reason":"","OrderId":""}}]}}
+15:10:02  [INFO ] : 发送URL请求  →  http://39.98.231.61:30003/api/fromqimen?method=returnorder.confirm&timestamp=1603869002210&format=json&app_key=21534044&v=2.0&sign_method=md5&sales_brand=swatch&sign=7DADAF36E816E0F5DAD4C2B3D104CABE
+15:10:02  [INFO ] : 接口：【退货入库回写oms】 的返回体是：{"flag":"success","code":"0","message":""}
+15:10:02  [INFO ] : 退货入库回写oms → 断言验证成功, 结果与预期结果匹配
+15:10:43  [INFO ] : ownerCode：swatch
+15:10:43  [INFO ] : return_sn：1028150850799d
+15:10:43  [INFO ] : cancelReason：七天无理由
+15:10:44  [INFO ] : 该接口请求体： {"warehouseCode":"BQJX01","ownerCode":"swatch","orderCode":"1028150850799d","orderType":"THRK","cancelReason":"七天无理由"}
+15:10:45  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+15:10:46  [INFO ] : 接口 -->> 【进入退换货界面】 的返回体是html格式 ->> 状态码：200
+15:10:46  [INFO ] : 接口 -->> 【进入详情页面】 的返回体是：{"code":"","msg":"","count":1,"data":[{"id":372,"suit_barcode":"","goods_barcode":"7610522823730","oid":"1028150724570","goods_sn":"GE721","goods_name":"BLUE AWAY","color_name":"BLUE AWAY","size_name":"BLUE AWAY","buy_goods_num":1,"goods_price":"200.00","return_goods_num":1,"refund_fee":"200.00","is_delete":0,"order_sn":"1028150724570a","money_paid":200,"serial_no":"","order_goods_id":770,"return_status":"收到退货","goods_sales_type":0,"serial_num":1,"serial_list":[]}]}
+15:10:47  [INFO ] : 接口 -->> 【点击推送作废退货单】 的返回体是：{"flag":"success","msg":"作废成功！"}
+15:10:47  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+15:10:47  [INFO ] : ----------------------------------------------获--取--HUB--数--据----------------------------------------------------------------
+15:10:48  [INFO ] : SSH连接<- bq_interface ->数据库成功

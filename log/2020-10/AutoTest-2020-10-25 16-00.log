@@ -1,0 +1,4 @@
+16:00:39  [INFO ] : 该接口请求体： {"warehouseCode":"BQJX01","ownerCode":"swatch","orderCode":"1025155828780d","orderType":"THRK","cancelReason":"七天无理由"}
+16:00:40  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+16:00:40  [INFO ] : 接口 -->> 【点击进入退货页面】 的返回体是html格式 ->> 状态码：404
+16:00:41  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302

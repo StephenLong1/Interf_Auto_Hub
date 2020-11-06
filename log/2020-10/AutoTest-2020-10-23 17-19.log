@@ -1,0 +1,47 @@
+17:19:01  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+17:19:01  [INFO ] : 天猫订单创建成功：1个订单多个oid 生成的平台订单号为：1023171900445
+17:19:01  [INFO ] : 关闭数据库成功
+17:19:01  [INFO ] : SSH连接<- fuoms_swatch ->数据库成功
+17:19:01  [INFO ] : ----------------------------------------------执-行--OMS-【一键转单】-定-时-任-务---------------------------------------------------
+17:19:03  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+17:19:03  [INFO ] : 接口 -->> 【进入代转订单页面】 的返回体是html格式 ->> 状态码：200
+17:19:04  [INFO ] : 接口 -->> 【点击一键转单】 的返回体是：swatch斯沃琪官方旗舰店转单结束，正常：1单，退款：0单，问题：0单，crm赠品：0单
+17:19:04  [INFO ] : 接口 -->> 【OMS系统一键转单成功】 tid:1023171900445
+17:19:04  [INFO ] : ----------------------------------------------执-行--OMS-【一键转审核】---------------------------------------------------------------------------
+17:19:05  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+17:19:06  [INFO ] : 接口 -->> 【进入订单详情页】 的返回体是html格式 ->> 状态码：200
+17:19:06  [INFO ] : 接口 -->> 【点击一键审核】 的返回体是：{"flag":"success","msg":"操作成功"}
+17:19:06  [INFO ] : 671 || 1 || Hp31dYZdmcxaocPUASDppQgdJGEBnjM7F95dzhbM
+17:19:07  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+17:19:07  [INFO ] : 天猫平台订单号：1023171900445
+17:19:07  [INFO ] : 关闭数据库成功
+17:19:07  [INFO ] : ------------------------------------------------------------------------------------------------------------------------------------------------
+17:19:18  [INFO ] : 平台订单号：1023171900445
+17:19:18  [INFO ] : 订单号：1023171900445a
+17:19:20  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+17:19:20  [INFO ] : 该接口请求体： {"deliveryOrder":{"deliveryOrderCode":"1023171900445a","preDeliveryOrderCode":"","preDeliveryOrderId":"","orderType":"JYCK","warehouseCode":"BQJX01","orderFlag":"NORMAL","sourcePlatformCode":"TM","createTime":"2020-10-23 17:19:00","placeOrderTime":"2020-10-23 17:19:00","payTime":"2020-10-23 17:19:00","payNo":"","operateTime":"2020-10-23 17:19:00","logisticsCode":"SF","logisticsName":"\u987a\u4e30\u901f\u8fd0","expressCode":"","invoiceFlag":"N","shopNick":"swatch","buyerNick":"","totalAmount":"1000.00","itemAmount":"1000.00","discountAmount":"","gotAmount":"1000.00","sellerMessage":"","buyerMessage":"","remark":"","logisticsAreaCode":null,"receiverInfo":{"name":"stephen","tel":"13100000000","mobile":"13100000000","province":"\u4e0a\u6d77","city":"\u4e0a\u6d77\u5e02","area":"\u957f\u5b81\u533a","detailAddress":"\u4e0a\u6d77\u5e02\u957f\u5b81\u533a\u63a5\u53e3\u81ea\u52a8\u5316","town":null,"email":""},"serviceCode":2,"extendProps":{"PaymentTerm":"OTHER","CarrierCharges":"0.00"}},"extendProps":{"baoJia":0,"baoJia_amount":0,"isPresell":"","mappingCode":"","proCode":"","PresellOrder":0,"payStatus":1},"orderLines":{"orderLine":[{"orderLineNo":717,"sourceOrderCode":"1023171900445","subSourceOrderCode":"","itemCode":"7610522823730","ownerCode":"swatch","inventoryType":"ZP","planQty":1,"actualPrice":"200.00","retailPrice":"200.00","discountAmount":0.00,"extendProps":{"barCode":"7610522823730","Comment1":"","Comment2":"自动化测试商品1"}},{"orderLineNo":718,"sourceOrderCode":"1023171900445","subSourceOrderCode":"","itemCode":"7610522828841","ownerCode":"swatch","inventoryType":"ZP","planQty":1,"actualPrice":"800.00","retailPrice":"800.00","discountAmount":0.00,"extendProps":{"barCode":"7610522828841","Comment1":"","Comment2":"自动化测试商品2"}}]}}
+17:19:21  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+17:19:22  [INFO ] : 接口 -->> 【进入详情页】 的返回体是html格式 ->> 状态码：200
+17:19:23  [INFO ] : 接口 -->> 【点击发货】 的返回体是：{"flag":"success","msg":"操作成功"}
+17:19:23  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+17:19:23  [INFO ] : ----------------------------------------------获--取--HUB--数--据--------------------------------------------------------
+17:19:24  [INFO ] : SSH连接<- bq_interface ->数据库成功
+17:19:24  [INFO ] : select * from swatch_delivery_order where deliveryOrderCode='1023171900445a'limit 1,2;
+17:19:24  [INFO ] : select * from swatch_delivery_order where deliveryOrderCode='1023171900445a'limit 0,1;
+17:19:24  [INFO ] : 【HUB<插入数据商品1>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"800.00","sourceOrderCode":"1023171900445","itemCode":"7610522828841","orderFlag":"NORMAL","detailAddress":"上海市长宁区接口自动化","deliveryOrderCode":"1023171900445a","retailPrice":"200.00","warehouseCode":"BQJX01"}
+17:19:24  [INFO ] : 【HUB<插入数据商品2>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"200.00","sourceOrderCode":"1023171900445","itemCode":"7610522823730","orderFlag":"NORMAL","detailAddress":"上海市长宁区接口自动化","deliveryOrderCode":"1023171900445a","retailPrice":"200.00","warehouseCode":"BQJX01"}
+17:19:24  [INFO ] : ----------------------------------------------获--取--OMS--数--据--------------------------------------------------------
+17:19:24  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"orderType":"JYCK","actualPrice2":"800.00","actualPrice1":"200.00","barCode1":"7610522823730","warehouseCode":"BQJX01","barCode2":"7610522828841","sourcePlatformCode":"TM","orderFlag":"NORMAL","fullAddress":"上海市长宁区接口自动化","sourceOrderCode1":"1023171900445","sourceOrderCode2":"1023171900445","planQty2":"1","planQty1":"1","order_sn":"1023171900445a"}
+17:19:24  [INFO ] : -------------------------------------校验成功 ->> hub-interface的表与oms数据校验一致, 测试通过------------------------------
+17:19:37  [INFO ] : 平台订单号：1023171900445
+17:19:37  [INFO ] : 订单号：1023171900445a
+17:19:37  [INFO ] : ShopCode：swatch
+17:19:37  [INFO ] : 取消原因：七天无理由
+17:19:38  [INFO ] : 发送URL请求  →  http://47.92.244.122:30004/index.php?method=orderCancel&timestamp=1603444778885&format=json&app_key=21534044&v=2.0&sign_method=md5&sales_brand=swatch&sign=42213057A74EB835ACABB9C3A32BD57C
+17:19:39  [INFO ] : 接口：【取消订单】 的返回体是：{"code":0,"msg":"Request succeed","flag":"success","data":[]}
+17:19:39  [INFO ] : 取消/作废订单 → 断言验证成功, 结果与预期结果匹配
+17:19:39  [INFO ] : ----------------------------------------------获--取--HUB--数--据----------------------------------------------------------------
+17:19:40  [INFO ] : SSH连接<- bq_interface ->数据库成功
+17:19:40  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"shopCode":"swatch","DealCode":"1023171900445","CancelDate":"2020-10-23 17:19:00","orderId":"1023171900445a","Canceler":"stephen"}
+17:19:40  [INFO ] : 【HUB<插入数据>表中的数据为： →】{"CancelReason":"stephen","DealCode":"1023171900445","CancelDate":"2020-10-23 17:19:00.0","Canceler":"stephen","orderId":"1023171900445a","interface__time":"2020-10-23 17:19:38.0","id":"100","ShopCode":"swatch","interface_status":"0"}
+17:19:40  [INFO ] : -------------------------------------校验成功 ->> hub-interface的表与oms数据校验一致, 测试通过-------------------------------------

@@ -1,0 +1,18 @@
+20:26:39  [INFO ] : deal_code：1030173713570
+20:26:47  [INFO ] : 该接口请求体： {"returnOrder":{"returnOrderCode":"1030174035851d","warehouseCode":"BQJX01","orderType":"THRK","preDeliveryOrderCode":"1030173713570a","logisticsCode":"SF","logisticsName":"SF","expressCode":"12345678","buyerNick":"stephen","senderInfo":{"name":"stephen","mobile":"13100000000","email":"","province":"\u4e0a\u6d77\u000d\u000a","city":"\u4e0a\u6d77\u000d\u000a","area":"\u4e0a\u6d77\u000d\u000a","detailAddress":"\u4e0a\u6d77\u5e02\u957f\u5b81\u533a\u63a5\u53e3\u81ea\u52a8\u5316"},"remark":"","returnReason":"七天无理由"},"orderLines":{"orderLine":[{"orderLineNo":2120,"sourceOrderCode":"1030173713570","subSourceOrderCode":"20201030173703","ownerCode":"clarks","itemCode":"203506744040","planQty":1,"snList":{"sn":[]},"inventoryType":"ZP","extendProps":{"preOrderId":"","preSubOrderId":"428","barCode":"203506744040","UnitPrice":"800.00"}}]},"extendProps":{"shopCode":"clarks_women","ReceiptAmount":"800.00","Zip":"000000"}}
+20:26:48  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+20:26:49  [INFO ] : 接口 -->> 【进入退换货界面】 的返回体是html格式 ->> 状态码：200
+20:26:49  [INFO ] : 接口 -->> 【进入详情页面】 的返回体是：{"code":"","msg":"","count":1,"data":[{"id":2120,"suit_barcode":"","goods_barcode":"203506744040","oid":"1030173713570","goods_sn":"203506744","goods_name":"Hamble Oak","color_name":"深棕色","size_name":"040","buy_goods_num":1,"goods_price":"800.00","return_goods_num":1,"refund_fee":"200.00","is_delete":0,"order_sn":"1030173713570a","money_paid":800,"serial_no":"","order_goods_id":11031026,"return_status":"收到退货","goods_sales_type":0,"serial_num":1,"serial_list":[]}]}
+20:26:50  [INFO ] : 接口 -->> 【点击推送仓库/退货单】 的返回体是：{"flag":"error","msg":"refund.该订单不是未匹配状态，不能推送！"}
+20:26:50  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+20:26:59  [INFO ] : shopName：clarks女鞋旗舰店
+20:26:59  [INFO ] : shopCode：clarks_women
+20:26:59  [INFO ] : ownerCode：clarks
+20:26:59  [INFO ] : 商品单价1：800
+20:26:59  [INFO ] : 商品单价2：600
+20:26:59  [INFO ] : 商品SKU1：203506744040
+20:26:59  [INFO ] : 商品SKU2：261224405025
+20:26:59  [INFO ] : 商品1数量：1
+20:26:59  [INFO ] : 商品2数量：1
+20:26:59  [INFO ] : 商品折扣1：0.00
+20:26:59  [INFO ] : 商品折扣1：0.00

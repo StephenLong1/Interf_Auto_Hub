@@ -1,0 +1,5 @@
+20:50:00  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+20:50:00  [INFO ] : 接口 -->> 【进入详情页】 的返回体是html格式 ->> 状态码：200
+20:50:01  [INFO ] : 接口 -->> 【点击一键审核】 的返回体是：{"flag":"success","msg":"操作成功"}
+20:50:01  [INFO ] : 968 1 s6uo1h8bqTyMXxs2tsjMhzFTAiGdkkPqzHnhEltk
+20:50:01  [INFO ] : X-CSRF-TOKENs6uo1h8bqTyMXxs2tsjMhzFTAiGdkkPqzHnhEltk

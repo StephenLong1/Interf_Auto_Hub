@@ -1,0 +1,43 @@
+10:52:16  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+10:52:16  [INFO ] : 天猫订单创建成功：1个订单 生成的平台订单号为：1020105214848
+10:52:16  [INFO ] : 关闭数据库成功
+10:52:16  [INFO ] : SSH连接<- fuoms_mulberry ->数据库成功
+10:52:16  [INFO ] : 天猫订单创建成功：1个订单 生成的平台订单号为：1020105214848
+10:52:16  [INFO ] : ----------------------------------------------执-行--OMS-【一键转单】-定-时-任-务-------------------------------------------------
+10:52:18  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+10:52:19  [INFO ] : 接口 -->> 【搜索定时任务之转单】 的返回体是html格式 ->> 状态码：200
+10:52:20  [INFO ] : 接口 -->> 【点击执行】 的返回体是：{"status":1,"msg":"操作成功"}
+10:52:20  [INFO ] : 接口 -->> 【获取店铺id】 id:1
+10:52:20  [INFO ] : ----------------------------------------------执-行--OMS-【一键转审核】---------------------------------------------------------------------------
+10:52:21  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+10:52:21  [INFO ] : 接口 -->> 【进入订单详情页】 的返回体是：{"status":1,"msg":"数据不存在"}
+10:52:22  [INFO ] : Date: Tue, 20 Oct 2020 02:52:21 GMT
+10:52:22  [INFO ] : Server: Apache
+10:52:22  [INFO ] : X-Frame-Options: SAMEORIGIN
+10:52:22  [INFO ] : X-Powered-By: PHP/7.1.7
+10:52:22  [INFO ] : Cache-Control: no-cache, private
+10:52:22  [INFO ] : Set-Cookie: mcs_session=eyJpdiI6IlwvbENOMjh0MWlWd1lUazBPWkJNN1lBPT0iLCJ2YWx1ZSI6InlINjhWUHdZdkZxMGE5eDQ1eFwvM293bTFnK0Z2aWNcL1NwN25xekpEVzNPMHB2dkxaM09CYjZ3cWJKMVlLVW0wQnl3VmliQzdLdk01K3FvVVBwVTdySUE9PSIsIm1hYyI6Ijk3OGRiODk1N2U4ZWExY2UyYTE2MjFjOTMzMmY0MjdlZTc1NzUzODM5YjUxMTJjZTdkYWJlNzg2NGVhMjZiNmEifQ%3D%3D; expires=Tue, 20-Oct-2020 14:52:22 GMT; Max-Age=43200; path=/; httponly
+10:52:22  [INFO ] : Vary: Accept-Encoding
+10:52:22  [INFO ] : Keep-Alive: timeout=15, max=300
+10:52:22  [INFO ] : Connection: Keep-Alive
+10:52:22  [INFO ] : Content-Type: text/html; charset=UTF-8
+10:52:22  [INFO ] : [Lorg.apache.http.Header;@45905bff
+10:52:22  [INFO ] : 接口 -->> 【点击一键审核】 的返回体是html格式 ->> 状态码：419
+10:52:22  [INFO ] : null || 1 || null
+10:52:23  [INFO ] : Date: Tue, 20 Oct 2020 02:52:22 GMT
+10:52:23  [INFO ] : Server: Apache
+10:52:23  [INFO ] : X-Frame-Options: SAMEORIGIN
+10:52:23  [INFO ] : X-Powered-By: PHP/7.1.7
+10:52:23  [INFO ] : Cache-Control: no-cache, private
+10:52:23  [INFO ] : Location: http://39.98.231.61:30003/admin/login
+10:52:23  [INFO ] : Set-Cookie: XSRF-TOKEN=eyJpdiI6Im1KZ0U1OGhYUUE1d0ErTk1ZUTdKSFE9PSIsInZhbHVlIjoiVkFlVlZRWXJtTk5xYWFXZlVrM1VlQT09IiwibWFjIjoiN2UxYjQ4YWVhNTMyM2E3NzFhNzYyZGNkNjIzMTQ2NmQ2ZTc5ZWVlMWYxZGZjNTNmZWI2MzYyMTU3MzY5ZGJmMyJ9; expires=Tue, 20-Oct-2020 14:52:22 GMT; Max-Age=43200; path=/
+10:52:23  [INFO ] : Set-Cookie: mcs_session=eyJpdiI6IlB4UHZ3M2hpZ3B1WEVLS0lIME9hZUE9PSIsInZhbHVlIjoiQkZtcEZkZ05LXC9pYzdcL2QzeUs5bjFDbGd0RklPN21UcFo5MFMwTW9IaTQzRnNYZTY1aUpxVGxBQ2VOSWJyRjFZU2xpWkF4XC9wZFBQTURBUnY5N3d1bHc9PSIsIm1hYyI6IjhiZGQzZWFlNzA3OTAwNDcyYWNiMjkxNjExZDliMWRlODI1YzVjMTg0ZjlhNzFlMGYzYmZlNTNlNWI4N2JiNjIifQ%3D%3D; expires=Tue, 20-Oct-2020 14:52:22 GMT; Max-Age=43200; path=/; httponly
+10:52:23  [INFO ] : Vary: Accept-Encoding
+10:52:23  [INFO ] : Keep-Alive: timeout=15, max=300
+10:52:23  [INFO ] : Connection: Keep-Alive
+10:52:23  [INFO ] : Content-Type: text/html; charset=UTF-8
+10:52:23  [INFO ] : [Lorg.apache.http.Header;@2ccca26f
+10:52:23  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+10:52:23  [INFO ] : 天猫平台订单号：1020105214848
+10:52:23  [INFO ] : 关闭数据库成功
+10:52:23  [INFO ] : ----------------------------------------------------------------------------------------------------------

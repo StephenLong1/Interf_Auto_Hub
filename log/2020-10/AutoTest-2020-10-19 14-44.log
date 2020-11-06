@@ -1,0 +1,19 @@
+14:44:09  [INFO ] : 平台订单号：1019144151365
+14:44:09  [INFO ] : 订单号：1019144151365a
+14:44:29  [INFO ] : 平台订单号：1019144151365
+14:44:29  [INFO ] : 订单号：1019144151365a
+14:44:38  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+14:44:38  [INFO ] : 该接口请求体： {"deliveryOrder":{"deliveryOrderCode":"1019144151365a","preDeliveryOrderCode":"","preDeliveryOrderId":"","orderType":"JYCK","warehouseCode":"BQJX01","orderFlag":"NORMAL","sourcePlatformCode":"TM","createTime":"2020-10-19 14:41:51","placeOrderTime":"2020-10-19 14:41:51","payTime":"2020-10-19 14:41:51","payNo":"","operateTime":"2020-10-19 14:41:51","logisticsCode":"SF","logisticsName":"\u987a\u4e30\u901f\u8fd0","expressCode":"","invoiceFlag":"N","shopNick":"mulberry","buyerNick":"","totalAmount":"3100.00","itemAmount":"3100.00","discountAmount":"","gotAmount":"3100.00","sellerMessage":"","buyerMessage":"","remark":"","logisticsAreaCode":null,"receiverInfo":{"name":"stephen","tel":"13100000000","mobile":"13100000000","province":"\u4e0a\u6d77","city":"\u4e0a\u6d77\u5e02","area":"\u957f\u5b81\u533a","detailAddress":"\u4e0a\u6d77\u5e02\u957f\u5b81\u533a\u63a5\u53e3\u81ea\u52a8\u5316","town":null,"email":""},"serviceCode":2,"extendProps":{"PaymentTerm":"OTHER","CarrierCharges":"0.00"}},"extendProps":{"baoJia":0,"baoJia_amount":0,"isPresell":"","mappingCode":"","proCode":"","PresellOrder":0,"payStatus":1},"orderLines":{"orderLine":[{"orderLineNo":965,"sourceOrderCode":"1019144151365","subSourceOrderCode":"","itemCode":"HH4706/205Z698OS","ownerCode":"mulberry","inventoryType":"ZP","planQty":3,"actualPrice":"3000.00","retailPrice":"3000.00","discountAmount":200,"extendProps":{"barCode":"HH4706/205Z698OS","Comment1":"","Comment2":"自动化测试商品1"}},{"orderLineNo":966,"sourceOrderCode":"1019144151365","subSourceOrderCode":"","itemCode":"HH5059/205A100OS","ownerCode":"mulberry","inventoryType":"ZP","planQty":1,"actualPrice":"100.00","retailPrice":"100.00","discountAmount":0,"extendProps":{"barCode":"HH5059/205A100OS","Comment1":"","Comment2":"自动化测试商品2"}}]}}
+14:44:38  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+14:44:39  [INFO ] : 接口 -->> 【进入详情页】 的返回体是html格式 ->> 状态码：200
+14:44:39  [INFO ] : 接口 -->> 【点击发货】 的返回体是：{"flag":"success","msg":"操作成功"}
+14:44:39  [INFO ] : ----------------------------------------------获--取--HUB--数--据--------------------------------------------------------
+14:44:40  [INFO ] : SSH连接<- bq_interface ->数据库成功
+14:44:40  [INFO ] : select * from mulberry_delivery_order where deliveryOrderCode='1019144151365a'limit 1,2;
+14:44:40  [INFO ] : select * from mulberry_delivery_order where deliveryOrderCode='1019144151365a'limit 0,1;
+14:44:40  [INFO ] : 【HUB<插入数据商品1>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"100.00","sourceOrderCode":"1019144151365","itemCode":"HH5059/205A100OS","orderFlag":"NORMAL","discountAmount":"0.00","detailAddress":"上海市长宁区接口自动化","deliveryOrderCode":"1019144151365a","retailPrice":"9500.00","warehouseCode":"BQJX01"}
+14:44:40  [INFO ] : 【HUB<插入数据商品2>表中的数据为： →】{"orderType":"JYCK","planQty":"3","sourcePlatformCode":"TM","actualPrice":"3000.00","sourceOrderCode":"1019144151365","itemCode":"HH4706/205Z698OS","orderFlag":"NORMAL","discountAmount":"0.00","detailAddress":"上海市长宁区接口自动化","deliveryOrderCode":"1019144151365a","retailPrice":"11600.00","warehouseCode":"BQJX01"}
+14:44:40  [INFO ] : ----------------------------------------------获--取--OMS--数--据--------------------------------------------------------
+14:44:40  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"orderType":"JYCK","planQty":"3","sourcePlatformCode":"TM","actualPrice":"3000.00","sourceOrderCode":"1019144151365","itemCode":"HH4706/205Z698OS","orderFlag":"NORMAL","discountAmount":"0.00","detailAddress":"上海市长宁区接口自动化","deliveryOrderCode":"1019144151365a","retailPrice":"11600.00","warehouseCode":"BQJX01"}
+14:44:40  [INFO ] : -------------------------------------校验失败 ->> hub-interface的表与oms数据校验不一致,测试失败-----------------------------
+14:44:40  [INFO ] : 关闭数据库成功

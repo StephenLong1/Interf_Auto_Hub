@@ -1,0 +1,10 @@
+14:23:00  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+14:23:01  [INFO ] : 接口 -->> 【进入退换货界面】 的返回体是html格式 ->> 状态码：200
+14:23:01  [INFO ] : 接口 -->> 【进入详情页面】 的返回体是：{"code":"","msg":"","count":1,"data":[{"id":369,"suit_barcode":"","goods_barcode":"7610522823730","oid":"20201028142010","goods_sn":"GE721","goods_name":"BLUE AWAY","color_name":"BLUE AWAY","size_name":"BLUE AWAY","buy_goods_num":1,"goods_price":"200.00","return_goods_num":1,"refund_fee":"200.00","is_delete":0,"order_sn":"1028142024503a","money_paid":200,"serial_no":"","order_goods_id":766,"return_status":"退货在途","goods_sales_type":0,"serial_num":1,"serial_list":[]}]}
+14:23:03  [INFO ] : 接口 -->> 【点击推送仓库/退货单】 的返回体是：{"flag":"success","msg":"推送成功！"}
+14:23:03  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+14:23:03  [INFO ] : ----------------------------------------------获--取--HUB--数--据----------------------------------------------------------------
+14:23:04  [INFO ] : SSH连接<- bq_interface ->数据库成功
+14:23:04  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"orderType":"THRK","planQty":"1","ownerCode":"swatch","itemCode":"7610522823730","preDeliveryOrderCode":"1028142024503a","subSourceOrderCode":"20201028142010","warehouseCode":"BQJX01","barCode":"7610522823730","ReceiptAmount":"200.00","UnitPrice":"200.00","returnOrderCode":"1028142104031d","returnReason":"七天无理由","sourceOrderCode":"1028142024503","detailAddress":"上海市长宁区接口自动化"}
+14:23:04  [INFO ] : 【HUB<插入数据>表中的数据为： →】{"shopCode":"swatch","orderType":"THRK","planQty":"1","ownerCode":"swatch","itemCode":"7610522823730","preDeliveryOrderCode":"1028142024503a","subSourceOrderCode":"20201028142010","warehouseCode":"BQJX01","ReceiptAmount":"200.00","UnitPrice":"200.00","returnOrderCode":"1028142104031d","returnReason":"七天无理由","sourceOrderCode":"1028142024503","detailAddress":"上海市长宁区接口自动化"}
+14:23:04  [INFO ] : -------------------------------------校验成功 ->> hub-interface的表与oms数据校验一致, 测试通过-------------------------------------

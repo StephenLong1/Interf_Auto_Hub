@@ -1,0 +1,22 @@
+11:04:36  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+11:04:36  [INFO ] : 天猫订单创建成功：1个订单多个oid 生成的平台订单号为：1028110435135
+11:04:36  [INFO ] : 关闭数据库成功
+11:04:37  [INFO ] : SSH连接<- fuoms_swatch ->数据库成功
+11:04:37  [INFO ] : ----------------------------------------------执-行--OMS-【一键转单】-定-时-任-务---------------------------------------------------
+11:04:38  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+11:04:38  [INFO ] : 接口 -->> 【进入代转订单页面】 的返回体是html格式 ->> 状态码：200
+11:04:39  [INFO ] : 接口 -->> 【点击一键转单】 的返回体是：swatch斯沃琪官方旗舰店转单结束，正常：1单，退款：0单，问题：0单，crm赠品：0单
+11:04:39  [INFO ] : 接口 -->> 【OMS系统一键转单成功】 tid:1028110435135
+11:04:39  [INFO ] : ----------------------------------------------执-行--OMS-【一键转审核】---------------------------------------------------------------------------
+11:04:40  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+11:04:40  [INFO ] : 接口 -->> 【进入订单详情页】 的返回体是html格式 ->> 状态码：200
+11:04:41  [INFO ] : 接口 -->> 【点击一键审核】 的返回体是：{"flag":"success","msg":"操作成功"}
+11:04:41  [INFO ] : 734 || 1 || rR9YqLkr0iq4JMQEhMZLrULEY8seeYCdc91WGP91
+11:04:41  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+11:04:41  [INFO ] : 天猫平台订单号：1028110435135
+11:04:41  [INFO ] : 关闭数据库成功
+11:04:41  [INFO ] : ------------------------------------------------------------------------------------------------------------------------------------------------
+11:04:54  [INFO ] : 平台订单号：1028110435135
+11:04:54  [INFO ] : 订单号：1028110435135a
+11:04:59  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+11:04:59  [INFO ] : 该接口请求体： {"deliveryOrder":{"deliveryOrderCode":"1028110435135a","preDeliveryOrderCode":"","preDeliveryOrderId":"","orderType":"JYCK","warehouseCode":"BQJX01","orderFlag":"NORMAL","sourcePlatformCode":"TM","createTime":"2020-10-28 11:04:35","placeOrderTime":"2020-10-28 11:04:35","payTime":"2020-10-28 11:04:35","payNo":"","operateTime":"2020-10-28 11:04:35","logisticsCode":"SF","logisticsName":"\u987a\u4e30\u901f\u8fd0","expressCode":"","invoiceFlag":"N","shopNick":"swatch","buyerNick":"","totalAmount":"500.00","itemAmount":"500.00","discountAmount":"","gotAmount":"500.00","sellerMessage":"","buyerMessage":"","remark":"","logisticsAreaCode":null,"receiverInfo":{"name":"stephen","tel":"13100000000","mobile":"13100000000","province":"\u4e0a\u6d77","city":"\u4e0a\u6d77\u5e02","area":"\u957f\u5b81\u533a","detailAddress":"\u4e0a\u6d77\u5e02\u957f\u5b81\u533a\u63a5\u53e3\u81ea\u52a8\u5316","town":null,"email":""},"serviceCode":2,"extendProps":{"PaymentTerm":"OTHER","CarrierCharges":"0.00"}},"extendProps":{"baoJia":0,"baoJia_amount":0,"isPresell":"","mappingCode":"","proCode":"","PresellOrder":0,"payStatus":1},"orderLines":{"orderLine":[{"orderLineNo":754,"sourceOrderCode":"1028110435135","subSourceOrderCode":"","itemCode":"7610522823730","ownerCode":"swatch","inventoryType":"ZP","planQty":1,"actualPrice":"200.00","retailPrice":"200.00","discountAmount":0.00,"extendProps":{"barCode":"7610522823730","Comment1":"","Comment2":"自动化测试商品1"}},{"orderLineNo":755,"sourceOrderCode":"1028110435135","subSourceOrderCode":"","itemCode":"7610522828841","ownerCode":"swatch","inventoryType":"ZP","planQty":1,"actualPrice":"300.00","retailPrice":"300.00","discountAmount":0.00,"extendProps":{"barCode":"7610522828841","Comment1":"","Comment2":"自动化测试商品2"}}]}}

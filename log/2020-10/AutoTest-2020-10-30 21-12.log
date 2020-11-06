@@ -1,0 +1,24 @@
+21:12:09  [INFO ] : 平台订单号：1030210420294
+21:12:09  [INFO ] : 订单号：1030210420294a
+21:12:11  [INFO ] : 接口 -->> 【WMS发货回传】 的返回体是：<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <flag>failure</flag>
+  <code>order.not.exist</code>
+  <message>订单不存在</message>
+</response>
+
+21:12:27  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+21:12:27  [INFO ] : INSERT INTO `jdp_tb_refund`(`refund_id`, `seller_nick`, `buyer_nick`, `status`, `created`, `tid`, `oid`, `modified`, `jdp_hashcode`, `jdp_response`, `jdp_created`, `jdp_modified`) VALUES (1030211226202, 'clarks女鞋旗舰店', 'stephen', 'WAIT_BUYER_RETURN_GOODS', '2020-10-30 21:12:26', 1030210420294, 20201030202229, '2020-10-30 21:12:26', '17644905', '{"refund_get_response":{"refund":{"refund_id":"1030211226202","status":"WAIT_BUYER_RETURN_GOODS","seller_nick":"clarks女鞋旗舰店","buyer_nick":"stephen","tid":1030210420294,"oid":20201030202229,"created":"2020-10-30 21:12:26","modified":"2020-10-30 21:12:26","advance_status":0,"alipay_no":"2019031422001101000544245835","attribute":";enfunddetail:1;ee_trace_id:0b0fa8ec15529958004425408e6491;bizCode:tmall.general.refund;lastOrder:0;disputeRequest:1;newRefund:rp2;tod:259200000;leavesCat:50012010;opRole:buyer;7d:1;apply_init_refund_fee:490000;itemBuyAmount:1;apply_text_id:500768;b2c:1;userCredit:5;seller_batch:true;restartForXiaoer:0;rootCat:50006842;tos:1;ol_tf:490000;sku:8806195806760|颜色分类#3B干邑色MWZ9SPA72CO001;sgr:1;bgmtc:2019-03-14 10#3B20#3B25;payMode:alipay;workflowName:refund;shop_name:MCM官方旗舰店;ttid:h5;old_reason_id:15;abnormal_dispute_status:0;seller_audit:0;itemPrice:490000;isVirtual:0;EXmrf:490000;","cs_status":1,"desc":"不要了，再另外买其他款","good_status":"BUYER_NOT_RECEIVED","has_good_return":true,"num":1,"num_iid":585560583902,"operation_contraint":"null","order_status":"WAIT_SELLER_SEND_GOODS","payment":"0.00","price":"800.00","reason":"七天无理由","refund_fee":"200.00","refund_phase":"onsale","refund_remind_timeout":{"exist_timeout":true,"remind_type":1,"timeout":"2020-10-30 21:12:26"},"refund_version":11111111,"sku":"203506744040","title":"自动化测试商品1","total_fee":"800.00"}}}', '2020-10-30 21:12:26', '2020-10-30 21:12:26');
+21:12:27  [INFO ] : 天猫退款单创建成功：1个订单单个oid  生成的refund_deal_code：1030211226202
+21:12:27  [INFO ] : 关闭数据库成功
+21:12:27  [INFO ] : SSH连接<- fuoms_clarks ->数据库成功
+21:12:27  [INFO ] : ----------------------------------------------执-行--OMS-【拉取天猫退货退款单】-定-时-任-务-------------------------------------------------
+21:12:29  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+21:12:29  [INFO ] : 接口 -->> 【搜索定时任务之拉取-退货退款-单】 的返回体是html格式 ->> 状态码：200
+21:12:31  [INFO ] : 接口 -->> 【点击执行】 的返回体是：{"status":1,"msg":"操作成功"}
+21:12:31  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+21:12:31  [INFO ] : 在表中【order_refund】获取到的refund_sn: 1030211226202d
+21:12:31  [INFO ] : 在表中【order_return】获取到的return_id: 21223
+21:12:31  [INFO ] : 在表中【order_return】获取到的return_sn: 1030211226202d
+21:12:31  [INFO ] : 在order_return_goods查询到的第一行的Id：null
+21:12:31  [INFO ] : 关闭数据库成功

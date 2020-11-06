@@ -1,0 +1,21 @@
+17:01:28  [INFO ] : 订单号：1028170027118a
+17:01:29  [INFO ] : 该接口请求体： {"deliveryOrderCode":"1028170027118a","orderType":"JYCK","warehouseCode":"BQJX01","outBizCode":"1028170027118a-1195985","confirmType":"0","orderConfirmTime":"2020-10-28 17:00:27","deliveryOrderId":null,"updatedDate":"2020-10-28 17:00:27","logisticsName":"SF","logisticsNo":"SF1111111111113"}
+17:01:29  [INFO ] : 发送URL请求  →  http://39.98.231.61:30003/api/fromduijie?method=delivery.order&timestamp=1603875689120&format=json&app_key=21534044&v=2.0&sign_method=md5&sales_brand=swatch&sign=467084BEBC33EEED4633C3758DF68671
+17:01:29  [INFO ] : 接口：【订单发货回传】 的返回体是：{"flag":"success","code":"","message":"操作成功"}
+17:01:29  [INFO ] : {"deliveryOrderCode":"1028170027118a","orderType":"JYCK","warehouseCode":"BQJX01","outBizCode":"1028170027118a-1195985","confirmType":"0","orderConfirmTime":"2020-10-28 17:00:27","deliveryOrderId":null,"updatedDate":"2020-10-28 17:00:27","logisticsName":"SF","logisticsNo":"SF1111111111113"}
+17:01:29  [INFO ] : 订单发货回传 → 断言验证成功, 结果与预期结果匹配
+17:01:43  [INFO ] : 平台订单号：1028170027118
+17:01:43  [INFO ] : 订单号：1028170027118a
+17:01:43  [INFO ] : ShopCode：swatch
+17:01:43  [INFO ] : 取消原因：七天无理由
+17:01:44  [INFO ] : 该接口请求体： {"DealCode":"1028170027118","shopCode":"swatch","orderId":"1028170027118a","CancelReason":"七天无理由","Canceler":"\u0073\u0074\u0065\u0070\u0068\u0065\u006e","CancelDate":"2020-10-28 17:00:27"}
+17:01:45  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+17:01:46  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+17:01:46  [INFO ] : 接口 -->> 【进入详情页】 的返回体是html格式 ->> 状态码：200
+17:01:47  [INFO ] : 接口 -->> 【点击订单作废】 的返回体是：{"flag":"failure","msg":"没有可以操作的订单"}
+17:01:47  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+17:01:47  [INFO ] : ----------------------------------------------获--取--HUB--数--据----------------------------------------------------------------
+17:01:48  [INFO ] : SSH连接<- bq_interface ->数据库成功
+17:01:48  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"shopCode":"swatch","CancelReason":"七天无理由","DealCode":"1028170027118","CancelDate":"2020-10-28 17:00:27","orderId":"1028170027118a","Canceler":"stephen"}
+17:01:48  [INFO ] : 【HUB<插入数据>表中的数据为： →】{}
+17:01:48  [INFO ] : 【如果interface表没有查询到相关数据或为空, 无法进行数据校验, 若控制台日志显示接口执行正常, 请仔细检查该接口是否是走hub或该品牌是否支持该接口】

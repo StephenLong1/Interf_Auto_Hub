@@ -1,0 +1,12 @@
+17:56:39  [INFO ] : 平台订单号：1030173713570
+17:56:39  [INFO ] : 订单号：1030173713570a
+17:56:41  [INFO ] : 该接口请求体： {"deliveryOrder":{"deliveryOrderCode":"1030173713570a","preDeliveryOrderCode":"","preDeliveryOrderId":"","orderType":"JYCK","warehouseCode":"BQJX01","orderFlag":"NORMAL","sourcePlatformCode":"TM","createTime":"2020-10-30 17:56:37","placeOrderTime":"2020-10-30 17:56:37","payTime":"2020-10-30 17:56:37","payNo":"","operateTime":"2020-10-30 17:56:37","logisticsCode":"SF","logisticsName":"\u987a\u4e30\u901f\u8fd0","expressCode":"","invoiceFlag":"N","shopNick":"clarks","buyerNick":"stephen","totalAmount":"800.00","itemAmount":"800.00","discountAmount":"0.00","gotAmount":"800.00","sellerMessage":"","buyerMessage":"","remark":"","logisticsAreaCode":null,"receiverInfo":{"name":"stephen","tel":"13100000000","mobile":"13100000000","province":"\u4e0a\u6d77","city":"\u4e0a\u6d77\u5e02","area":"\u957f\u5b81\u533a","detailAddress":"\u4e0a\u6d77\u5e02\u957f\u5b81\u533a\u63a5\u53e3\u81ea\u52a8\u5316","town":null},"serviceCode":2},"extendProps":{"baoJia":0,"baoJia_amount":0,"isPresell":"","mappingCode":"","proCode":"","PresellOrder":0,"payStatus":1},"orderLines":{"orderLine":[{"orderLineNo":1,"sourceOrderCode":"1030173713570","subSourceOrderCode":"","itemCode":"203506744040","ownerCode":"clarks","inventoryType":"ZP","planQty":1,"actualPrice":"800.00","retailPrice":"800.00","discountAmount":0.00,"extendProps":{"barCode":"203506744040"}}]}}
+17:56:42  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+17:56:43  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+17:56:43  [INFO ] : 接口 -->> 【进入详情页】 的返回体是html格式 ->> 状态码：200
+17:56:44  [INFO ] : 接口 -->> 【点击发货】 的返回体是：{"flag":"failure","msg":"没有可以操作的订单，请检查发货仓库信息！"}
+17:56:44  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+17:56:44  [INFO ] : ----------------------------------------------获--取--HUB--数--据----------------------------------------------------------------
+17:56:45  [INFO ] : SSH连接<- bq_interface ->数据库成功
+17:56:45  [INFO ] : 【注意事项： 1. 如果如上显示interface表没有查询到相关数据或为空, 则interface表无此数据】
+17:56:45  [INFO ] : 【注意事项： 2. 若控制台日志显示接口执行正常, 请仔细检查该接口是否是走hub或该品牌是否支持该接口】

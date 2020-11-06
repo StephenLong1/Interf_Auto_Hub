@@ -1,0 +1,15 @@
+13:41:14  [INFO ] : ----------------------------------------------执-行--OMS-【一键转单】-定-时-任-务---------------------------------------------------
+13:41:16  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+13:41:17  [INFO ] : 接口 -->> 【进入代转订单页面】 的返回体是html格式 ->> 状态码：200
+13:41:17  [INFO ] : null
+13:41:17  [INFO ] : 接口 -->> 【点击执行】 的返回体是html格式 ->> 状态码：419
+13:41:17  [INFO ] : Date: Tue, 20 Oct 2020 05:41:17 GMT
+13:41:17  [INFO ] : Server: Apache
+13:41:17  [INFO ] : X-Frame-Options: SAMEORIGIN
+13:41:17  [INFO ] : X-Powered-By: PHP/7.1.7
+13:41:17  [INFO ] : Cache-Control: no-cache, private
+13:41:17  [INFO ] : Set-Cookie: mcs_session=eyJpdiI6IkU3TTNkS1VsaWtSa1BTSTlCbVUyQ1E9PSIsInZhbHVlIjoiN1pQVWR2VU1XMVhVb1FuYTcwekZSazFmQ2xjTHB0YWtNTVM1WHBvdzZWWGZHQmpublV5UFZOUkhKbGZwdkg4Q24zT0pEWHdWR2tyRHFQamppV29vVEE9PSIsIm1hYyI6IjMxNWU3YmE3NjFjOTE2NGY5YjgyZTA5YTFlYTA1NDhkZGMxYzZkN2FjMDcxMmYxMmVjN2Y2NTk0MGEwNTdlOGMifQ%3D%3D; expires=Tue, 20-Oct-2020 17:41:17 GMT; Max-Age=43200; path=/; httponly
+13:41:17  [INFO ] : Vary: Accept-Encoding
+13:41:17  [INFO ] : Keep-Alive: timeout=15, max=300
+13:41:17  [INFO ] : Connection: Keep-Alive
+13:41:17  [INFO ] : Content-Type: text/html; charset=UTF-8

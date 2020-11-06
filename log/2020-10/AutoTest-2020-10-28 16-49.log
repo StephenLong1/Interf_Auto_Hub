@@ -1,0 +1,51 @@
+16:49:03  [INFO ] : shopName：claudiepierlot官方旗舰店
+16:49:03  [INFO ] : shopCode：cp
+16:49:03  [INFO ] : ownerCode：cp
+16:49:03  [INFO ] : 商品单价1：500
+16:49:03  [INFO ] : 商品单价2：300
+16:49:03  [INFO ] : 商品SKU1：3609140205206
+16:49:03  [INFO ] : 商品SKU2：3609140205244
+16:49:03  [INFO ] : 商品1数量：1
+16:49:03  [INFO ] : 商品2数量：1
+16:49:03  [INFO ] : 商品折扣1：0.00
+16:49:03  [INFO ] : 商品折扣1：0.00
+16:49:05  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+16:49:05  [INFO ] : sys_info2_trade创建成功：1个订单 生成的平台订单号为：1028164904020
+16:49:05  [INFO ] : 关闭数据库成功
+16:49:05  [INFO ] : SSH连接<- fuoms_cp ->数据库成功
+16:49:05  [INFO ] : 天猫订单创建成功：1个订单 生成的平台订单号为：1028164904020
+16:49:05  [INFO ] : ----------------------------------------------执-行--OMS-【一键转单】-定-时-任-务---------------------------------------------------
+16:49:07  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+16:49:08  [INFO ] : 接口 -->> 【进入代转订单页面】 的返回体是html格式 ->> 状态码：200
+16:49:08  [INFO ] : 接口 -->> 【点击一键转单】 的返回体是：claudiepierlot官方旗舰店转单结束，正常：1单，退款：0单，问题：0单，crm赠品：0单
+16:49:09  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+16:49:09  [INFO ] : ----------------------------------------------执-行--OMS-【一键转单】-定-时-任-务---------------------------------------------------
+16:49:10  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+16:49:11  [INFO ] : 接口 -->> 【进入代转订单页面】 的返回体是html格式 ->> 状态码：200
+16:49:12  [INFO ] : 接口 -->> 【点击一键转单】 的返回体是：claudiepierlot官方旗舰店转单结束，没有可转订单
+16:49:12  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+16:49:12  [INFO ] : 在表中【order_info】获取到的order_id: 432 outer_order_id: 
+16:49:13  [INFO ] : 接口 -->> 【OMS系统一键转单成功】 tid:1028164904020
+16:49:13  [INFO ] : ----------------------------------------------执-行--OMS-【一键转审核】---------------------------------------------------------------------------
+16:49:14  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+16:49:15  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+16:49:16  [INFO ] : 接口 -->> 【进入订单详情页】 的返回体是html格式 ->> 状态码：200
+16:49:16  [INFO ] : 接口 -->> 【点击一键审核】 的返回体是：{"flag":"failure","msg":"操作失败"}
+16:49:16  [INFO ] : 432 || 1 || 8u94a8Ba0CldGkg91cA6BZWlRuzZGqqyJqjCygwx
+16:49:17  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+16:49:17  [INFO ] : 天猫平台订单号：1028164904020
+16:49:17  [INFO ] : 关闭数据库成功
+16:49:17  [INFO ] : ----------------------------------------------------------------------------------------------------------
+16:49:20  [INFO ] : 平台订单号：1028164904020
+16:49:20  [INFO ] : 订单号：1028164904020a
+16:49:23  [INFO ] : 该接口请求体： {"deliveryOrder":{"deliveryOrderCode":"1028164904020a","preDeliveryOrderCode":"","preDeliveryOrderId":"","orderType":"JYCK","warehouseCode":"BQJX01","orderFlag":"NORMAL","sourcePlatformCode":"TM","createTime":"2020-10-28 16:49:04","placeOrderTime":"2020-10-28 16:49:04","payTime":"2020-10-28 16:49:04","payNo":"","operateTime":"2020-10-28 16:49:04","logisticsCode":"SF","logisticsName":"\u987a\u4e30\u901f\u8fd0","expressCode":"","invoiceFlag":"N","shopNick":"cp","buyerNick":"stephen","totalAmount":"500.00","itemAmount":"500.00","discountAmount":"0.00","gotAmount":"500.00","sellerMessage":"","buyerMessage":"","remark":"","logisticsAreaCode":null,"receiverInfo":{"name":"stephen","tel":"13100000000","mobile":"13100000000","province":"\u4e0a\u6d77","city":"\u4e0a\u6d77\u5e02","area":"\u957f\u5b81\u533a","detailAddress":"\u4e0a\u6d77\u5e02\u957f\u5b81\u533a\u63a5\u53e3\u81ea\u52a8\u5316","town":null},"serviceCode":2},"extendProps":{"baoJia":0,"baoJia_amount":0,"isPresell":"","mappingCode":"","proCode":"","PresellOrder":0,"payStatus":1},"orderLines":{"orderLine":[{"orderLineNo":1,"sourceOrderCode":"1028164904020","subSourceOrderCode":"","itemCode":"3609140205206","ownerCode":"cp","inventoryType":"ZP","planQty":1,"actualPrice":"500.00","retailPrice":"500.00","discountAmount":0.00,"extendProps":{"barCode":"3609140205206"}}]}}
+16:49:25  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+16:49:25  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+16:49:26  [INFO ] : 接口 -->> 【进入详情页】 的返回体是html格式 ->> 状态码：200
+16:49:27  [INFO ] : 接口 -->> 【点击发货】 的返回体是：{"flag":"failure","msg":"没有可以操作的订单，请检查发货仓库信息！"}
+16:49:28  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+16:49:28  [INFO ] : ----------------------------------------------获--取--HUB--数--据----------------------------------------------------------------
+16:49:28  [INFO ] : SSH连接<- bq_interface ->数据库成功
+16:49:28  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"500.00","fullAddress":"上海市长宁区接口自动化","orderFlag":"NORMAL","discountAmount":"0.00","retailPrice":"500.00","order_sn":"1028164904020a","deal_code(":"1028164904020","warehouseCode":"BQJX01","barCode":"3609140205206"}
+16:49:28  [INFO ] : 【HUB<插入数据>表中的数据为： →】{}
+16:49:28  [INFO ] : 【interface表没有查询到相关数据, 无法进行数据校验, 如果控制台日志显示接口执行正常, 请仔细检查该接口是否是走hub或该品牌是否支持该接口】

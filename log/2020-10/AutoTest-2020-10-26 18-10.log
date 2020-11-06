@@ -1,0 +1,19 @@
+18:10:01  [INFO ] : deal_code：1026180906223
+18:10:01  [INFO ] : refund_fee1：200.00
+18:10:01  [INFO ] : oid：20201026180859
+18:10:03  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+18:10:03  [INFO ] : INSERT INTO `jdp_tb_refund`(`refund_id`, `seller_nick`, `buyer_nick`, `status`, `created`, `tid`, `oid`, `modified`, `jdp_hashcode`, `jdp_response`, `jdp_created`, `jdp_modified`) VALUES (1026181002157, 'swatch斯沃琪官方旗舰店', 'stephen', 'WAIT_BUYER_RETURN_GOODS', '2020-10-26 18:10:02', 1026180906223, 1026180906223, '2020-10-26 18:10:02', '17644905', '{"refund_get_response":{"refund":{"refund_id":"1026181002157","status":"WAIT_BUYER_RETURN_GOODS","seller_nick":"swatch斯沃琪官方旗舰店","buyer_nick":"stephen","tid":1026180906223,"oid":1026180906223,"created":"2020-10-26 18:10:02","modified":"2020-10-26 18:10:02","advance_status":0,"alipay_no":"2019031422001101000544245835","attribute":";enfunddetail:1;ee_trace_id:0b0fa8ec15529958004425408e6491;bizCode:tmall.general.refund;lastOrder:0;disputeRequest:1;newRefund:rp2;tod:259200000;leavesCat:50012010;opRole:buyer;7d:1;apply_init_refund_fee:490000;itemBuyAmount:1;apply_text_id:500768;b2c:1;userCredit:5;seller_batch:true;restartForXiaoer:0;rootCat:50006842;tos:1;ol_tf:490000;sku:8806195806760|颜色分类#3B干邑色MWZ9SPA72CO001;sgr:1;bgmtc:2019-03-14 10#3B20#3B25;payMode:alipay;workflowName:refund;shop_name:MCM官方旗舰店;ttid:h5;old_reason_id:15;abnormal_dispute_status:0;seller_audit:0;itemPrice:490000;isVirtual:0;EXmrf:490000;","cs_status":1,"desc":"不要了，再另外买其他款","good_status":"BUYER_NOT_RECEIVED","has_good_return":true,"num":1,"num_iid":585560583902,"operation_contraint":"null","order_status":"WAIT_SELLER_SEND_GOODS","payment":"0.00","price":"200.00","reason":"多拍/拍错/不想要","refund_fee":"200.00","refund_phase":"onsale","refund_remind_timeout":{"exist_timeout":true,"remind_type":1,"timeout":"2020-10-26 18:10:02"},"refund_version":11111111,"sku":"7610522823730","title":"自动化测试商品1","total_fee":"200.00"}}}', '2020-10-26 18:10:02', '2020-10-26 18:10:02');
+18:10:03  [INFO ] : 天猫退款单创建成功：1个订单单个oid  生成的refund_deal_code：1026181002157
+18:10:03  [INFO ] : 关闭数据库成功
+18:10:04  [INFO ] : SSH连接<- fuoms_swatch ->数据库成功
+18:10:04  [INFO ] : ----------------------------------------------执-行--OMS-【拉取天猫退货退款单】-定-时-任-务-------------------------------------------------
+18:10:05  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+18:10:06  [INFO ] : 接口 -->> 【搜索定时任务之拉取-退货退款-单】 的返回体是html格式 ->> 状态码：200
+18:10:08  [INFO ] : 接口 -->> 【点击执行】 的返回体是：{"status":1,"msg":"操作成功"}
+18:10:08  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+18:10:09  [INFO ] : 在表中【order_refund】获取到的refund_sn: 1026181002157d
+18:10:09  [INFO ] : 在表中【order_return】获取到的return_id: 12693
+18:10:09  [INFO ] : 在表中【order_return】获取到的return_sn: 1026181002157d
+18:10:09  [INFO ] : 在表中【order_return_goods1】获取到的id: null
+18:10:09  [INFO ] : 在表中【order_return_goods2】获取到的id: null
+18:10:09  [INFO ] : 关闭数据库成功

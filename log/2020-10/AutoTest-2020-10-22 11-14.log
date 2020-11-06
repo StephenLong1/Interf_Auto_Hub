@@ -1,0 +1,7 @@
+11:14:15  [INFO ] : 发送URL请求  →  http://47.92.244.122:30004/index.php?method=orderCancel&timestamp=1603336454693&format=json&app_key=21534044&v=2.0&sign_method=md5&sales_brand=swatch&sign=DCC82A0076B0BBAED5E605DBEE80327F
+11:14:15  [INFO ] : 接口：【取消订单】 的返回体是：{"code":401,"data":"1022110644237","msg":"非法请求：INVALID_SIGNATURE"}
+11:14:15  [INFO ] : 取消/作废订单 → 断言验证失败, 请查看返回体,检查你所测试的品牌商是否支持该接口,
+11:14:15  [INFO ] : ----------------------------------------------获--取--HUB--数--据----------------------------------------------------------------
+11:14:16  [INFO ] : SSH连接<- bq_interface ->数据库成功
+11:14:16  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"shopCode":"swatch","DealCode":"1022110644237","CancelDate":"2020-10-22 11:14:14","orderId":"1022110644237a","Canceler":"stephen"}
+11:14:16  [INFO ] : 【HUB<插入数据>表中的数据为： →】{}

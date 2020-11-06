@@ -1,0 +1,8 @@
+21:14:00  [INFO ] : 接口 -->> 【点击发货】 的返回体是：{"flag":"failure","msg":"没有可以操作的订单，请检查发货仓库信息！"}
+21:14:00  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+21:14:00  [INFO ] : ----------------------------------------------获--取--HUB--数--据----------------------------------------------------------------
+21:14:01  [INFO ] : SSH连接<- bq_interface ->数据库成功
+21:14:02  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"1000.00","fullAddress":"上海市长宁区接口自动化","orderFlag":"NORMAL","discountAmount":"0.00","retailPrice":"1000.00","order_sn":"1021140722459a","deal_code(":"1021140722459","warehouseCode":"BQJX01","barCode":"HH4706/205Z698OS"}
+21:14:02  [INFO ] : 【HUB<插入数据>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"1000.00","sourceOrderCode":"1021140722459","itemCode":"HH4706/205Z698OS","orderFlag":"NORMAL","discountAmount":"0.00","detailAddress":"上海市长宁区接口自动化","deliveryOrderCode":"1021140722459a","retailPrice":"11600.00","warehouseCode":"BQJX01"}
+21:14:02  [INFO ] : -------------------------------------校验成功 ->> hub-interface的表与oms数据校验一致, 测试通过-------------------------------------
+21:14:02  [INFO ] : 关闭数据库成功

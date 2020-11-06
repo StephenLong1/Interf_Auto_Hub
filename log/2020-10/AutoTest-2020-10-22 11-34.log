@@ -1,0 +1,8 @@
+11:34:26  [INFO ] : 发送URL请求  →  http://47.92.244.122:30004/index.php?method=orderCancel&timestamp=1603337666372&format=json&app_key=21534044&v=2.0&sign_method=md5&sales_brand=swatch&sign=3F2A55F0C38855E0AE7DE5CE1493019C
+11:34:27  [INFO ] : 接口：【取消订单】 的返回体是：{"code":0,"msg":"Request succeed","flag":"success","data":[]}
+11:34:27  [INFO ] : 取消/作废订单 → 断言验证成功, 结果与预期结果匹配
+11:34:27  [INFO ] : ----------------------------------------------获--取--HUB--数--据----------------------------------------------------------------
+11:34:28  [INFO ] : SSH连接<- bq_interface ->数据库成功
+11:34:28  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"shopCode":"swatch","DealCode":"1022110644237","CancelDate":"2020-10-22 11:34:26","orderId":"1022110644237a","Canceler":"stephen"}
+11:34:28  [INFO ] : 【HUB<插入数据>表中的数据为： →】{"CancelReason":"七天无理由","DealCode":"1022110644237","CancelDate":"2020-10-22 11:34:26.0","Canceler":"stephen","orderId":"1022110644237a","interface__time":"2020-10-22 11:34:26.0","id":"90","ShopCode":"swatch","interface_status":"0"}
+11:34:28  [INFO ] : -------------------------------------校验成功 ->> hub-interface的表与oms数据校验一致, 测试通过-------------------------------------

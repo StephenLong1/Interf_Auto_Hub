@@ -1,0 +1,8 @@
+21:01:21  [INFO ] : 接口 -->> 【WMS发货回传】 的返回体是：<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <flag>success</flag>
+  <code></code>
+  <message>操作成功</message>
+</response>
+
+21:01:21  [INFO ] : database=fuoms_clarks&order_sn=1029205510156a

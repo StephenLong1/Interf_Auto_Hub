@@ -1,0 +1,14 @@
+11:26:14  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+11:26:14  [INFO ] : 接口 -->> 【进入代转订单页面】 的返回体是html格式 ->> 状态码：200
+11:26:14  [INFO ] : Date: Tue, 20 Oct 2020 03:26:14 GMT
+11:26:14  [INFO ] : Server: Apache
+11:26:14  [INFO ] : X-Frame-Options: SAMEORIGIN
+11:26:14  [INFO ] : X-Powered-By: PHP/7.1.7
+11:26:14  [INFO ] : Cache-Control: no-cache, private
+11:26:14  [INFO ] : Set-Cookie: mcs_session=eyJpdiI6ImlzMmJLa1dpdHhPZmxoNXRrdGxMU1E9PSIsInZhbHVlIjoiOE5SUXp1MGszM1wvampCSEpuNWhuQ1d6WDF1Z1FYUndLd3NBeTFlWU16Zmg4WDd0QUFocWdXbHgyUFZncnhEVUtjNUtUeWlEYnpISzVKTTlLRFgyanZBPT0iLCJtYWMiOiJmMGIyMmQ4N2I2MzIwZTYzY2JjZTMwNGQzYmYzYWIxZDhlZmU0NjljNmFjYTU4ODkwODAwZWRiZGQyNzQxNTQwIn0%3D; expires=Tue, 20-Oct-2020 15:26:14 GMT; Max-Age=43200; path=/; httponly
+11:26:14  [INFO ] : Vary: Accept-Encoding
+11:26:14  [INFO ] : Keep-Alive: timeout=15, max=300
+11:26:14  [INFO ] : Connection: Keep-Alive
+11:26:14  [INFO ] : Content-Type: text/html; charset=UTF-8
+11:26:14  [INFO ] : [Lorg.apache.http.Header;@1b1426f4
+11:26:14  [INFO ] : 接口 -->> 【点击执行】 的返回体是html格式 ->> 状态码：419

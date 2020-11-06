@@ -1,0 +1,49 @@
+15:15:02  [INFO ] : shopName：mulberry天猫旗舰店
+15:15:02  [INFO ] : shopCode：mulberry
+15:15:02  [INFO ] : ownerCode：mulberry
+15:15:02  [INFO ] : 商品单价1：1000
+15:15:02  [INFO ] : 商品单价2：1000
+15:15:02  [INFO ] : 商品SKU1：HH4706/205Z698OS
+15:15:02  [INFO ] : 商品SKU2：HH5059/205A100OS
+15:15:02  [INFO ] : 商品1数量：1
+15:15:02  [INFO ] : 商品2数量：1
+15:15:02  [INFO ] : 商品折扣1：0
+15:15:02  [INFO ] : 商品折扣1：0
+15:15:04  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+15:15:04  [INFO ] : 天猫订单创建成功：1个订单 生成的平台订单号为：1020151503589
+15:15:04  [INFO ] : 关闭数据库成功
+15:15:04  [INFO ] : SSH连接<- fuoms_mulberry ->数据库成功
+15:15:04  [INFO ] : 天猫订单创建成功：1个订单 生成的平台订单号为：1020151503589
+15:15:04  [INFO ] : ----------------------------------------------执-行--OMS-【一键转单】-定-时-任-务---------------------------------------------------
+15:15:06  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+15:15:07  [INFO ] : 接口 -->> 【进入代转订单页面】 的返回体是html格式 ->> 状态码：200
+15:15:07  [INFO ] : http://39.98.231.61:30003/admin/api_order/orders_transfer/sd_id=1&tid=&order_type=0&pay_status=0&start_time=&end_time=&transfer_type=0
+15:15:07  [INFO ] : 接口 -->> 【点击一键转单】 的返回体是：mulberry天猫旗舰店转单结束，没有可转订单
+15:15:07  [INFO ] : 接口 -->> 【获取店铺id】 id:1
+15:15:07  [INFO ] : 接口 -->> 【OMS系统一键转单成功】 tid:1020151503589
+15:15:08  [INFO ] : 获取到的goods_barcode: HH4706/205Z698OS LineId： 1006 outer_goods_id:
+15:15:08  [INFO ] : 在表中【order_info】获取到的order_id: 1140 outer_order_id: 
+15:15:08  [INFO ] : ----------------------------------------------执-行--OMS-【一键转审核】---------------------------------------------------------------------------
+15:15:08  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+15:15:09  [INFO ] : 接口 -->> 【进入订单详情页】 的返回体是html格式 ->> 状态码：200
+15:15:09  [INFO ] : http://39.98.231.61:30003/admin/order/check/orders%5B%5D=1140&platform=0&sd_id=1
+15:15:10  [INFO ] : 接口 -->> 【点击一键审核】 的返回体是：{"flag":"success","msg":"操作成功"}
+15:15:10  [INFO ] : 1140 || 1 || 8STbi2EWtLh7ybfbtM8oCFywbUnLIdRcNFAmoih5
+15:15:10  [INFO ] : http://39.98.231.61:30003/admin/logout/_token=8STbi2EWtLh7ybfbtM8oCFywbUnLIdRcNFAmoih5
+15:15:11  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+15:15:11  [INFO ] : 天猫平台订单号：1020151503589
+15:15:11  [INFO ] : 关闭数据库成功
+15:15:11  [INFO ] : ----------------------------------------------------------------------------------------------------------
+15:15:27  [INFO ] : 该接口请求体： {"deliveryOrder":{"deliveryOrderCode":"1020151503589a","preDeliveryOrderCode":"","preDeliveryOrderId":"","orderType":"JYCK","warehouseCode":"BQJX01","orderFlag":"NORMAL","sourcePlatformCode":"TM","createTime":"2020-10-20 15:15:03","placeOrderTime":"2020-10-20 15:15:03","payTime":"2020-10-20 15:15:03","payNo":"","operateTime":"2020-10-20 15:15:03","logisticsCode":"SF","logisticsName":"\u987a\u4e30\u901f\u8fd0","expressCode":"","invoiceFlag":"N","shopNick":"mulberry","buyerNick":"stephen","totalAmount":"1000.00","itemAmount":"1000.00","discountAmount":"0","gotAmount":"1000.00","sellerMessage":"","buyerMessage":"","remark":"","logisticsAreaCode":null,"receiverInfo":{"name":"stephen","tel":"13100000000","mobile":"13100000000","province":"\u4e0a\u6d77","city":"\u4e0a\u6d77\u5e02","area":"\u957f\u5b81\u533a","detailAddress":"\u4e0a\u6d77\u5e02\u957f\u5b81\u533a\u63a5\u53e3\u81ea\u52a8\u5316","town":null},"serviceCode":2},"extendProps":{"baoJia":0,"baoJia_amount":0,"isPresell":"","mappingCode":"","proCode":"","PresellOrder":0,"payStatus":1},"orderLines":{"orderLine":[{"orderLineNo":1,"sourceOrderCode":"1020151503589","subSourceOrderCode":"","itemCode":"HH4706/205Z698OS","ownerCode":"mulberry","inventoryType":"ZP","planQty":1,"actualPrice":"1000.00","retailPrice":"1000.00","discountAmount":0,"extendProps":{"barCode":"HH4706/205Z698OS"}}]}}
+15:15:29  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+15:15:30  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+15:15:30  [INFO ] : 接口 -->> 【进入详情页】 的返回体是html格式 ->> 状态码：200
+15:15:30  [INFO ] : http://39.98.231.61:30003/admin/order/notice_shipping/orders%5B%5D=1140&platform=0&sd_id=1
+15:15:31  [INFO ] : 接口 -->> 【点击发货】 的返回体是html格式 ->> 状态码：419
+15:15:31  [INFO ] : http://39.98.231.61:30003/admin/logout/_token=M7uVSo9XT7lKfAS274qUajjvGrwBB27Mo4s3h4gX
+15:15:32  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+15:15:32  [INFO ] : ----------------------------------------------获--取--HUB--数--据----------------------------------------------------------------
+15:15:32  [INFO ] : SSH连接<- bq_interface ->数据库成功
+15:15:32  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"1000.00","fullAddress":"上海市长宁区接口自动化","orderFlag":"NORMAL","discountAmount":"0","retailPrice":"1000.00","order_sn":"1020151503589a","deal_code(":"1020151503589","warehouseCode":"BQJX01","barCode":"HH4706/205Z698OS"}
+15:15:32  [INFO ] : 【HUB<插入数据>表中的数据为： →】{}
+15:15:32  [INFO ] : 关闭数据库成功

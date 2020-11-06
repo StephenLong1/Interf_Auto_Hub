@@ -1,0 +1,48 @@
+14:57:02  [INFO ] : 平台订单号：1028145549795
+14:57:02  [INFO ] : 订单号：1028145549795a
+14:57:05  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+14:57:05  [INFO ] : 该接口请求体： {"deliveryOrder":{"deliveryOrderCode":"1028145549795a","preDeliveryOrderCode":"","preDeliveryOrderId":"","orderType":"JYCK","warehouseCode":"BQJX01","orderFlag":"NORMAL","sourcePlatformCode":"TM","createTime":"2020-10-28 14:55:49","placeOrderTime":"2020-10-28 14:55:49","payTime":"2020-10-28 14:55:49","payNo":"","operateTime":"2020-10-28 14:55:49","logisticsCode":"SF","logisticsName":"\u987a\u4e30\u901f\u8fd0","expressCode":"","invoiceFlag":"N","shopNick":"swatch","buyerNick":"","totalAmount":"500.00","itemAmount":"500.00","discountAmount":"","gotAmount":"500.00","sellerMessage":"","buyerMessage":"","remark":"","logisticsAreaCode":null,"receiverInfo":{"name":"stephen","tel":"13100000000","mobile":"13100000000","province":"\u4e0a\u6d77","city":"\u4e0a\u6d77\u5e02","area":"\u957f\u5b81\u533a","detailAddress":"\u4e0a\u6d77\u5e02\u957f\u5b81\u533a\u63a5\u53e3\u81ea\u52a8\u5316","town":null,"email":""},"serviceCode":2,"extendProps":{"PaymentTerm":"OTHER","CarrierCharges":"0.00"}},"extendProps":{"baoJia":0,"baoJia_amount":0,"isPresell":"","mappingCode":"","proCode":"","PresellOrder":0,"payStatus":1},"orderLines":{"orderLine":[{"orderLineNo":768,"sourceOrderCode":"1028145549795","subSourceOrderCode":"","itemCode":"7610522823730","ownerCode":"swatch","inventoryType":"ZP","planQty":1,"actualPrice":"200.00","retailPrice":"200.00","discountAmount":0.00,"extendProps":{"barCode":"7610522823730","Comment1":"","Comment2":"自动化测试商品1"}},{"orderLineNo":769,"sourceOrderCode":"1028145549795","subSourceOrderCode":"","itemCode":"7610522828841","ownerCode":"swatch","inventoryType":"ZP","planQty":1,"actualPrice":"300.00","retailPrice":"300.00","discountAmount":0.00,"extendProps":{"barCode":"7610522828841","Comment1":"","Comment2":"自动化测试商品2"}}]}}
+14:57:06  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+14:57:07  [INFO ] : 接口 -->> 【进入详情页】 的返回体是html格式 ->> 状态码：200
+14:57:08  [INFO ] : 接口 -->> 【点击发货】 的返回体是：{"flag":"success","msg":"操作成功"}
+14:57:08  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+14:57:08  [INFO ] : ----------------------------------------------获--取--HUB--数--据--------------------------------------------------------
+14:57:09  [INFO ] : SSH连接<- bq_interface ->数据库成功
+14:57:09  [INFO ] : select * from swatch_delivery_order where deliveryOrderCode='1028145549795a'limit 1,2;
+14:57:09  [INFO ] : select * from swatch_delivery_order where deliveryOrderCode='1028145549795a'limit 0,1;
+14:57:09  [INFO ] : 【HUB<插入数据商品1>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"300.00","sourceOrderCode":"1028145549795","itemCode":"7610522828841","orderFlag":"NORMAL","detailAddress":"上海市长宁区接口自动化","deliveryOrderCode":"1028145549795a","retailPrice":"200.00","warehouseCode":"BQJX01"}
+14:57:09  [INFO ] : 【HUB<插入数据商品2>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"200.00","sourceOrderCode":"1028145549795","itemCode":"7610522823730","orderFlag":"NORMAL","detailAddress":"上海市长宁区接口自动化","deliveryOrderCode":"1028145549795a","retailPrice":"200.00","warehouseCode":"BQJX01"}
+14:57:09  [INFO ] : ----------------------------------------------获--取--OMS--数--据--------------------------------------------------------
+14:57:09  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"orderType":"JYCK","actualPrice2":"300.00","actualPrice1":"200.00","barCode1":"7610522823730","warehouseCode":"BQJX01","barCode2":"7610522828841","sourcePlatformCode":"TM","orderFlag":"NORMAL","fullAddress":"上海市长宁区接口自动化","sourceOrderCode1":"1028145549795","sourceOrderCode2":"1028145549795","planQty2":"1","planQty1":"1","order_sn":"1028145549795a"}
+14:57:09  [INFO ] : -------------------------------------校验成功 ->> hub-interface的表与oms数据校验一致, 测试通过------------------------------
+14:57:14  [INFO ] : 订单号：1028145549795a
+14:57:15  [INFO ] : 该接口请求体： {"deliveryOrderCode":"1028145549795a","orderType":"JYCK","warehouseCode":"BQJX01","outBizCode":"1028145549795a-1195985","confirmType":"0","orderConfirmTime":"2020-10-28 14:55:49","deliveryOrderId":null,"updatedDate":"2020-10-28 14:55:49","logisticsName":"SF","logisticsNo":"SF1111111111113"}
+14:57:15  [INFO ] : 发送URL请求  →  http://39.98.231.61:30003/api/fromduijie?method=delivery.order&timestamp=1603868235508&format=json&app_key=21534044&v=2.0&sign_method=md5&sales_brand=swatch&sign=753EC1730E3455E55B70700E801521B3
+14:57:16  [INFO ] : 接口：【订单发货回传】 的返回体是：{"flag":"success","code":"","message":"操作成功"}
+14:57:16  [INFO ] : {"deliveryOrderCode":"1028145549795a","orderType":"JYCK","warehouseCode":"BQJX01","outBizCode":"1028145549795a-1195985","confirmType":"0","orderConfirmTime":"2020-10-28 14:55:49","deliveryOrderId":null,"updatedDate":"2020-10-28 14:55:49","logisticsName":"SF","logisticsNo":"SF1111111111113"}
+14:57:16  [INFO ] : 订单发货回传 → 断言验证成功, 结果与预期结果匹配
+14:57:23  [INFO ] : deal_code：1028145549795
+14:57:23  [INFO ] : refund_fee1：200.00
+14:57:23  [INFO ] : refund_fee2：300.00
+14:57:23  [INFO ] : oid1：20201028145239
+14:57:23  [INFO ] : oid2：20201044935831
+14:57:29  [INFO ] : deal_code：1028145549795
+14:57:29  [INFO ] : refund_fee1：200.00
+14:57:29  [INFO ] : refund_fee2：300.00
+14:57:29  [INFO ] : oid1：20201028145239
+14:57:29  [INFO ] : oid2：20201044935831
+14:57:31  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+14:57:31  [INFO ] : INSERT INTO `jdp_tb_refund`(`refund_id`, `seller_nick`, `buyer_nick`, `status`, `created`, `tid`, `oid`, `modified`, `jdp_hashcode`, `jdp_response`, `jdp_created`, `jdp_modified`) VALUES (1028145730802, 'swatch斯沃琪官方旗舰店', 'stephen', 'WAIT_BUYER_RETURN_GOODS', '2020-10-28 14:57:30', 1028145549795, 20201028145239, '2020-10-28 14:57:30', '17644905', '{"refund_get_response":{"refund":{"refund_id":"1028145730802","status":"WAIT_BUYER_RETURN_GOODS","seller_nick":"swatch斯沃琪官方旗舰店","buyer_nick":"stephen","tid":1028145549795,"oid":20201044935831,"created":"2020-10-28 14:57:30","modified":"2020-10-28 14:57:30","advance_status":0,"alipay_no":"2019031422001101000544245835","attribute":";enfunddetail:1;ee_trace_id:0b0fa8ec15529958004425408e6491;bizCode:tmall.general.refund;lastOrder:0;disputeRequest:1;newRefund:rp2;tod:259200000;leavesCat:50012010;opRole:buyer;7d:1;apply_init_refund_fee:490000;itemBuyAmount:1;apply_text_id:500768;b2c:1;userCredit:5;seller_batch:true;restartForXiaoer:0;rootCat:50006842;tos:1;ol_tf:490000;sku:8806195806760|颜色分类#3B干邑色MWZ9SPA72CO001;sgr:1;bgmtc:2019-03-14 10#3B20#3B25;payMode:alipay;workflowName:refund;shop_name:MCM官方旗舰店;ttid:h5;old_reason_id:15;abnormal_dispute_status:0;seller_audit:0;itemPrice:490000;isVirtual:0;EXmrf:490000;","cs_status":1,"desc":"不要了，再另外买其他款","good_status":"BUYER_NOT_RECEIVED","has_good_return":true,"num":1,"num_iid":585560583902,"operation_contraint":"null","order_status":"WAIT_SELLER_SEND_GOODS","payment":"0.00","price":"300.00","reason":"七天无理由","refund_fee":"300.00","refund_phase":"onsale","refund_remind_timeout":{"exist_timeout":true,"remind_type":1,"timeout":"2020-10-28 14:57:30"},"refund_version":11111111,"sku":"7610522828841","title":"自动化测试商品2","total_fee":"300.00"}}}', '2020-10-28 14:57:30', '2020-10-28 14:57:30');
+14:57:31  [INFO ] : 天猫退款单创建成功：1个订单单个oid  生成的refund_deal_code：1028145730802
+14:57:31  [INFO ] : 关闭数据库成功
+14:57:32  [INFO ] : SSH连接<- fuoms_swatch ->数据库成功
+14:57:32  [INFO ] : ----------------------------------------------执-行--OMS-【拉取天猫退货退款单】-定-时-任-务-------------------------------------------------
+14:57:33  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+14:57:34  [INFO ] : 接口 -->> 【搜索定时任务之拉取-退货退款-单】 的返回体是html格式 ->> 状态码：200
+14:57:35  [INFO ] : 接口 -->> 【点击执行】 的返回体是：{"status":1,"msg":"操作成功"}
+14:57:36  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+14:57:36  [INFO ] : 在表中【order_refund】获取到的refund_sn: 1028145730802d
+14:57:36  [INFO ] : 在表中【order_return】获取到的return_id: 13268
+14:57:36  [INFO ] : 在表中【order_return】获取到的return_sn: 1028145730802d
+14:57:36  [INFO ] : 在order_return_goods查询到的第一行的Id：null
+14:57:36  [INFO ] : 关闭数据库成功

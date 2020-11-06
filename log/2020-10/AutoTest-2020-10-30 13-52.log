@@ -1,0 +1,22 @@
+13:52:10  [INFO ] : deal_code：1030111631034
+13:52:10  [INFO ] : refund_fee1：200.00
+13:52:10  [INFO ] : oid：20201030135155
+13:52:13  [INFO ] : 该接口请求体： {"returnOrder":{"returnOrderCode":"20201030135046","warehouseCode":"BQJX01","orderType":"THRK","preDeliveryOrderCode":"1030111631034a","logisticsCode":"SF","logisticsName":"SF","expressCode":"12345678","buyerNick":"stephen","senderInfo":{"name":"stephen","mobile":"13100000000","email":"","province":"\u4e0a\u6d77\u000d\u000a","city":"\u4e0a\u6d77\u000d\u000a","area":"\u4e0a\u6d77\u000d\u000a","detailAddress":"\u4e0a\u6d77\u5e02\u957f\u5b81\u533a\u63a5\u53e3\u81ea\u52a8\u5316"},"remark":"","returnReason":"七天无理由"},"orderLines":{"orderLine":[{"orderLineNo":365,"sourceOrderCode":"1030111631034","subSourceOrderCode":"20201030135155","ownerCode":"clarks","itemCode":"203506744040","planQty":1,"snList":{"sn":[]},"inventoryType":"ZP","extendProps":{"preOrderId":"","preSubOrderId":"295","barCode":"203506744040","UnitPrice":"800.00"}}]},"extendProps":{"shopCode":"clarks_women","ReceiptAmount":"800.00","Zip":"000000"}}
+13:52:15  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+13:52:15  [INFO ] : 接口 -->> 【进入退换货界面】 的返回体是html格式 ->> 状态码：200
+13:52:16  [INFO ] : 接口 -->> 【进入详情页面】 的返回体是：{"code":"","msg":"","count":0,"data":[]}
+13:52:17  [INFO ] : 接口 -->> 【点击推送仓库/退货单】 的返回体是html格式 ->> 状态码：500
+13:52:18  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+13:52:18  [INFO ] : ----------------------------------------------获--取--HUB--数--据----------------------------------------------------------------
+13:52:19  [INFO ] : SSH连接<- bq_interface ->数据库成功
+13:52:19  [INFO ] : 注意事项： 1. 如果interface表没有查询到相关数据或为空, 则无法进行数据校验
+13:52:19  [INFO ] : 注意事项： 2. 若控制台日志显示接口执行正常, 请仔细检查该接口是否是走hub或该品牌是否支持该接口
+13:52:19  [INFO ] : 注意事项： 3. 要是hub的interface表找到了, 但是日志显示没有查询到相关数据,则可能是工具存在缺陷
+13:52:34  [INFO ] : deal_code：1030111631034
+13:52:34  [INFO ] : refund_fee1：200.00
+13:52:34  [INFO ] : oid：20201030135155
+13:52:42  [INFO ] : deal_code：1030111631034
+13:52:42  [INFO ] : refund_fee1：200.00
+13:52:42  [INFO ] : refund_fee2：300.00
+13:52:42  [INFO ] : oid1：20201030135155
+13:52:42  [INFO ] : oid2：20201012039784

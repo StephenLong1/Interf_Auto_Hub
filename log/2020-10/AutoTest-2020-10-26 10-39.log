@@ -1,0 +1,31 @@
+10:39:31  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+10:39:31  [INFO ] : 天猫订单创建成功：1个订单多个oid 生成的平台订单号为：1026103930486
+10:39:31  [INFO ] : 关闭数据库成功
+10:39:32  [INFO ] : SSH连接<- fuoms_swatch ->数据库成功
+10:39:32  [INFO ] : ----------------------------------------------执-行--OMS-【一键转单】-定-时-任-务---------------------------------------------------
+10:39:34  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+10:39:34  [INFO ] : 接口 -->> 【进入代转订单页面】 的返回体是html格式 ->> 状态码：200
+10:39:35  [INFO ] : 接口 -->> 【点击一键转单】 的返回体是：swatch斯沃琪官方旗舰店转单结束，正常：1单，退款：0单，问题：0单，crm赠品：0单
+10:39:35  [INFO ] : 接口 -->> 【OMS系统一键转单成功】 tid:1026103930486
+10:39:35  [INFO ] : ----------------------------------------------执-行--OMS-【一键转审核】---------------------------------------------------------------------------
+10:39:36  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+10:39:37  [INFO ] : 接口 -->> 【进入订单详情页】 的返回体是html格式 ->> 状态码：200
+10:39:38  [INFO ] : 接口 -->> 【点击一键审核】 的返回体是：{"flag":"success","msg":"操作成功"}
+10:39:38  [INFO ] : 711 || 1 || fdtxHfS0dtaVVDdj9K1kS9R36cek3qwS7P8k2fIX
+10:39:39  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+10:39:39  [INFO ] : 天猫平台订单号：1026103930486
+10:39:39  [INFO ] : 关闭数据库成功
+10:39:39  [INFO ] : ------------------------------------------------------------------------------------------------------------------------------------------------
+10:39:43  [INFO ] : 平台订单号：1026103930486
+10:39:43  [INFO ] : 订单号：1026103930486a
+10:39:44  [INFO ] : 该接口请求体： {"deliveryOrder":{"deliveryOrderCode":"1026103930486a","preDeliveryOrderCode":"","preDeliveryOrderId":"","orderType":"JYCK","warehouseCode":"BQJX01","orderFlag":"NORMAL","sourcePlatformCode":"TM","createTime":"2020-10-26 10:39:30","placeOrderTime":"2020-10-26 10:39:30","payTime":"2020-10-26 10:39:30","payNo":"","operateTime":"2020-10-26 10:39:30","logisticsCode":"SF","logisticsName":"\u987a\u4e30\u901f\u8fd0","expressCode":"","invoiceFlag":"N","shopNick":"swatch","buyerNick":"stephen","totalAmount":"200.00","itemAmount":"200.00","discountAmount":"0.00","gotAmount":"200.00","sellerMessage":"","buyerMessage":"","remark":"","logisticsAreaCode":null,"receiverInfo":{"name":"stephen","tel":"13100000000","mobile":"13100000000","province":"\u4e0a\u6d77","city":"\u4e0a\u6d77\u5e02","area":"\u957f\u5b81\u533a","detailAddress":"\u4e0a\u6d77\u5e02\u957f\u5b81\u533a\u63a5\u53e3\u81ea\u52a8\u5316","town":null},"serviceCode":2},"extendProps":{"baoJia":0,"baoJia_amount":0,"isPresell":"","mappingCode":"","proCode":"","PresellOrder":0,"payStatus":1},"orderLines":{"orderLine":[{"orderLineNo":1,"sourceOrderCode":"1026103930486","subSourceOrderCode":"","itemCode":"7610522823730","ownerCode":"swatch","inventoryType":"ZP","planQty":1,"actualPrice":"200.00","retailPrice":"200.00","discountAmount":0.00,"extendProps":{"barCode":"7610522823730"}}]}}
+10:39:45  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+10:39:45  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+10:39:46  [INFO ] : 接口 -->> 【进入详情页】 的返回体是html格式 ->> 状态码：200
+10:39:47  [INFO ] : 接口 -->> 【点击发货】 的返回体是：{"flag":"success","msg":"操作成功"}
+10:39:47  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+10:39:47  [INFO ] : ----------------------------------------------获--取--HUB--数--据----------------------------------------------------------------
+10:39:48  [INFO ] : SSH连接<- bq_interface ->数据库成功
+10:39:48  [INFO ] : 【OMS<请求数据>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"200.00","fullAddress":"上海市长宁区接口自动化","orderFlag":"NORMAL","discountAmount":"0.00","retailPrice":"200.00","order_sn":"1026103930486a","deal_code(":"1026103930486","warehouseCode":"BQJX01","barCode":"7610522823730"}
+10:39:48  [INFO ] : 【HUB<插入数据>表中的数据为： →】{"orderType":"JYCK","planQty":"1","sourcePlatformCode":"TM","actualPrice":"800.00","sourceOrderCode":"1026103930486","itemCode":"7610522828841","orderFlag":"NORMAL","discountAmount":"0.00","detailAddress":"上海市长宁区接口自动化","deliveryOrderCode":"1026103930486a","retailPrice":"200.00","warehouseCode":"BQJX01"}
+10:39:48  [INFO ] : -------------------------------------校验失败 ->> hub-interface的表与oms数据校验不一致,测试失败-------------------------------------

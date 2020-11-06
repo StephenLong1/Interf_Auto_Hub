@@ -1,0 +1,9 @@
+20:28:12  [INFO ] : 平台订单号：1030202704650
+20:28:12  [INFO ] : 订单号：1030202704650a
+20:28:15  [INFO ] : 接口 -->> 【WMS退货入库回传】 的返回体是：<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <flag>success</flag>
+  <code>0</code>
+  <message></message>
+</response>
+

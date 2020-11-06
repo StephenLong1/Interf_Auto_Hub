@@ -1,0 +1,7 @@
+17:37:03  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+17:37:04  [INFO ] : 天猫退款单创建成功：1个订单单个oid  生成的refund_deal_code：1022173702411
+17:37:58  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+17:37:58  [INFO ] : 天猫退款单创建成功：1个订单单个oid  生成的refund_deal_code：1022173756912
+17:37:58  [INFO ] : 关闭数据库成功
+17:37:59  [INFO ] : SSH连接<- fuoms_mulberry ->数据库成功
+17:37:59  [INFO ] : 关闭数据库成功

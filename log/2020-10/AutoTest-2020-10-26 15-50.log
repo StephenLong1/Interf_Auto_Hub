@@ -1,0 +1,4 @@
+15:50:13  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+15:50:14  [INFO ] : 接口 -->> 【进入退换货界面】 的返回体是html格式 ->> 状态码：200
+15:50:15  [INFO ] : 接口 -->> 【进入详情页面】 的返回体是：{"code":"","msg":"","count":1,"data":[{"id":354,"suit_barcode":"","goods_barcode":"7610522823730","oid":"1025155759291","goods_sn":"GE721","goods_name":"BLUE AWAY","color_name":"BLUE AWAY","size_name":"BLUE AWAY","buy_goods_num":1,"goods_price":"200.00","return_goods_num":1,"refund_fee":"200.00","is_delete":0,"order_sn":"1025155759291a","money_paid":200,"serial_no":"","order_goods_id":737,"return_status":"退货在途","goods_sales_type":0,"serial_num":1,"serial_list":[]}]}
+15:50:17  [INFO ] : 接口 -->> 【点击推送退货单】 的返回体是：{"flag":"error","msg":"refund.该订单不是未匹配状态，不能推送！"}

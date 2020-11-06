@@ -1,0 +1,235 @@
+22:25:24  [INFO ] : SSH连接<- sys_info_2 ->数据库成功
+22:25:24  [INFO ] : 天猫订单创建成功：1个订单 生成的平台订单号为：1019222524126
+22:25:24  [INFO ] : 关闭数据库成功
+22:25:24  [INFO ] : SSH连接<- fuoms_pandora ->数据库成功
+22:25:24  [INFO ] : 天猫订单创建成功：1个订单 生成的平台订单号为：1019222524126
+22:25:24  [INFO ] : ----------------------------------------------执-行--OMS-【一键转单】-定-时-任-务-----------------------------------------------------------------
+22:25:26  [INFO ] : 接口 -->> 【登录OMS系统成功】{"code":10000}
+22:25:26  [INFO ] : pandora
+22:25:27  [INFO ] : 接口 -->> 【进入定时任务界面】 的返回体是html格式 ->> 状态码：200
+22:25:27  [INFO ] : 接口 -->> 【搜索定时任务之转单】 的返回体是html格式 ->> 状态码：200
+22:25:42  [ERROR] : <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <script type="text/javascript" src="/js/securesdk_v2.js" id="J_secure_sdk_v2" data-appkey="21534044"></script>
+
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="stylesheet" type="text/css" href="../../lib/layui/css/layui.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/color.css"/>
+</head>
+<body>
+<div class="page-content">
+    <div class="layui-card">
+        <div class="layui-card-header">定时任务管理</div>
+        <div class="layui-card-body">
+            <div class="layui-card-body-search">
+                <form class="layui-form" action="" onsubmit="return false">
+                    <div class="layui-form-item">
+                        <div class="layui-inline tree-inline">
+                            <label class="layui-form-label">关键字：</label>
+                            <div class="layui-input-block tree-input-block">
+                                <input type="text" class="layui-input" placeholder="代码/名称" id="keyword">
+                            </div>
+                        </div>
+                        <div class="layui-inline tree-inline">
+                            <label class="layui-form-label">任务类型：</label>
+                            <div class="layui-input-block tree-input-block">
+                                <select id="type">
+                                    <option value="-1">全部</option>
+                                                                            <option value="0">每日一次</option>
+                                                                            <option value="1">每日多次</option>
+                                                                    </select>
+                            </div>
+                        </div>
+                        <div class="layui-inline tree-inline1">
+                            <label class="layui-form-label">任务状态：</label>
+                            <div class="layui-input-block tree-input-block">
+                                <select id="status">
+                                    <option value="-1">全部</option>
+                                                                            <option value="0">未启用</option>
+                                                                            <option value="1">已启用</option>
+                                                                            <option value="2">已停用</option>
+                                                                    </select>
+                            </div>
+                        </div>
+                        <button class="layui-btn layui-btn-primary btn mate-search color2" lay-filter="to-form"
+                                id="search-btn" style="margin-left: 20px;">查询
+                        </button>
+                                                    <button class="layui-btn layui-btn-primary btn color2"
+                                    onclick="javascript:location.href='/admin/cron/create';"
+                                    style="margin-left: 100px;">
+                                新增定时任务
+                            </button>
+                                            </div>
+                </form>
+            </div>
+            <table class="layui-table" lay-filter="od-listTable" id="to-table"></table>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/html" id="od-cronsTnfo-tool">
+
+    <a class="layui-btn layui-btn-xs" lay-event="btn-view">查看</a>
+        <a class="layui-btn layui-btn-xs" lay-event="btn-edit">编辑</a>
+        {{# if( d.status == 0 || d.status == 2){ }}
+        <a class="layui-btn layui-btn-xs" lay-event="btn-start">启用</a>
+        {{# } }}
+    {{# if( d.status == 1){ }}
+        <a class="layui-btn layui-btn-xs" lay-event="btn-run">执行</a>
+            <a class="layui-btn layui-btn-xs" lay-event="btn-stop">停用</a>
+        {{# } }}
+</script>
+<script src="/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script src="../../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    layui.extend({
+        main: '{/}../../static/js/main'
+    });
+    layui.use(['laydate', 'jquery', 'main', 'form', 'layer', 'table'], function () {
+        var form = layui.form,
+            layer = layui.layer,
+            table = layui.table;
+
+        table.on('tool(od-listTable)', function (obj) {
+            var data = obj.data;
+
+            if (obj.event === 'btn-view') {
+                //查看
+                location.href = '/admin/cron/view?cron_id=' + data.id;
+            }
+            if (obj.event === 'btn-edit') {
+                //编辑
+                location.href = '/admin/cron/create?cron_id=' + data.id;
+            } else if (obj.event == 'btn-start') {
+                //启用
+                layer.open({
+                   content:'确认启用该定时任务吗?'
+                    ,title:false
+                    ,btn:['确认','取消']
+                    ,yes:function (index) {
+                        operate('start', data.id)
+                        layer.close(index);
+                    }
+                });
+            } else if (obj.event == 'btn-run') {
+                //执行
+                layer.open({
+                    content:'确认执行该定时任务吗?'
+                    ,title:false
+                    ,btn:['确认','取消']
+                    ,yes:function (index) {
+                        operate('run', data.id);
+                        layer.close(index);
+                    }
+                });
+            } else if (obj.event == 'btn-stop') {
+                //停用
+                layer.open({
+                    content:'确认停用该定时任务吗?'
+                    ,title:false
+                    ,btn:['确认','取消']
+                    ,yes:function (index) {
+                        operate('stop', data.id);
+                        layer.close(index);
+                    }
+                });
+            }
+        });
+
+        var lack = false;
+        function operate(type, cron_id) {
+            if(lack){
+                return;
+            }
+
+            lack = true;
+            $.ajax({
+                type: "get",
+                url: '/admin/cron/operate',
+                data: {
+                    cron_id: cron_id,
+                    type: type
+                },
+                success: function (obj) {
+                    if (obj.status == 1) {
+                        layer.msg('操作成功');
+                        layui.table.reload('datatable', {page: {curr: 1}});
+                    } else {
+                        layer.msg('操作失败');
+                    }
+                    lack = false;
+                },
+                error: function (data) {
+                    layer.msg(data);
+                    lack = false;
+                }
+            });
+        }
+
+        $('#search-btn').click(function () {
+            var where = [];
+            where['keyword'] = $('#keyword').val();
+            where['type'] = $('#type').val();
+            where['status'] = $('#status').val();
+            table.reload('datatable', {
+                url: '/admin/cron/list'
+                , page: {
+                    curr: 1 //重新从第 1 页开始
+                }
+                , where: where
+                , loading: true
+            });
+        });
+
+        //表格渲染
+        table.render({
+            elem: '#to-table'
+            , url: '/admin/cron/list'
+            , cols: [[
+                {field: 'code', title: '任务内容代码', width: '280'}
+                , {field: 'name', title: '任务内容名称', width: '280'}
+                , {field: 'type_name', title: '任务类型', width: '80'}
+                , {field: 'last_time', title: '最近执行时间', width: '150'}
+                , {field: 'rate', title: '执行间隔时间(分钟)', width: '140'}
+                , {field: 'numbers', title: '已运行次数', width: '90'}
+                , {field: 'status_name', title: '状态', width: '80'}
+                , {field: 'cron_time', title: '每日执行时间', width: '110'}
+                , {field: 'start_time', title: '每日开始时间', width: '110'}
+                , {field: 'end_time', title: '每日结束时间', width: '110'}
+                , {fixed: 'right', title: '操作', align: 'center', width: '237', toolbar: '#od-cronsTnfo-tool'}
+            ]]
+            , page: true
+            , limits: [20, 50, 100]
+            , limit: 20
+            , id: 'datatable'
+            , where: {
+                keyword: $('#keyword').val(),
+                type: $('#type').val(),
+                status: $('#status').val()
+            }
+            , loading: true
+        })
+    });
+
+</script>
+</html>
+
+22:25:42  [INFO ] : 12
+22:25:45  [INFO ] : 接口 -->> 【获取店铺id】 id:1
+22:25:45  [INFO ] : ----------------------------------------------执-行--OMS-【一键转审核】---------------------------------------------------------------------------
+22:25:46  [INFO ] : 接口 -->> 【点击销售订单】 的返回体是html格式 ->> 状态码：200
+22:25:47  [INFO ] : 接口 -->> 【进入订单详情页】 的返回体是：{"status":1,"msg":"数据不存在"}
+22:25:47  [INFO ] : 接口 -->> 【点击一键审核】 的返回体是html格式 ->> 状态码：419
+22:25:47  [INFO ] : null || 1 || null
+22:25:48  [INFO ] : 接口 -->> 【点击退出OMS】 的返回体是html格式 ->> 状态码：302
+22:25:48  [INFO ] : 天猫平台订单号：1019222524126
+22:25:48  [INFO ] : 关闭数据库成功
+22:25:48  [INFO ] : ----------------------------------------------------------------------------------------------------------
